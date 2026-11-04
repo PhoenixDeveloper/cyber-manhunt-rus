@@ -1,0 +1,21 @@
+{
+  "method": "DeepL website text translator, EN detected to RU, glossary off; four strings entered together as paragraphs. This is diagnostic evidence, not a controlled same-endpoint comparison.",
+  "results": [
+    {
+      "key": "^course06",
+      "ru": "Нажмите на ссылку «Toothbook», чтобы перейти в социальную сеть целевого лица."
+    },
+    {
+      "key": "^course0801",
+      "ru": "Продолжайте изучать эту учетную запись в Toothbook. Там может содержаться другая полезная информация."
+    },
+    {
+      "key": "^course11",
+      "ru": "Как только вы узнаете настоящее имя и дополнительную информацию о целевом лице, вы сможете воспользоваться базой данных личной информации Titan, чтобы получить более подробные личные сведения."
+    },
+    {
+      "key": "^link_event_04_title",
+      "ru": "Утечка личной информации суперзвезды привела к полицейскому расследованию"
+    }
+  ]
+}

@@ -34,7 +34,7 @@ def load_payload():
             if not re.fullmatch('[0-9a-f]{64}', previous['sha256']) or not 0 < previous['size'] < 300 * 1024 * 1024:
                 raise PatchError('Повреждён манифест предыдущего перевода.')
             info = previous['restore']
-            if not re.fullmatch(re.escape(Path(name).name) + r'\.restore-v[12]\.bsdiff', info['file']):
+            if not re.fullmatch(re.escape(Path(name).name) + r'\.restore-v[123]\.bsdiff', info['file']):
                 raise PatchError('Некорректное имя патча предыдущего перевода.')
             content = (ROOT / 'payload' / info['file']).read_bytes()
             if len(content) != info['size'] or digest(content) != info['sha256']:
@@ -78,7 +78,7 @@ def process(mode, data):
                              'Обновлённые файлы или сторонний мод требуют другого патча; ничего не изменено.')
     print('Ресурсы: ' + str(data))
     for name, state in states.items():
-        label = {'original': 'оригинал', 'patched': 'русский перевод, редакция 3'}.get(state, 'предыдущий перевод — доступно обновление')
+        label = {'original': 'оригинал', 'patched': 'русский перевод, редакция ' + str(manifest['revision'])}.get(state, 'предыдущий перевод — доступно обновление')
         print('  ' + name + ': ' + label)
     if mode == 'check':
         print('Проверка пройдена. Версия совместима; файлы не изменены.')

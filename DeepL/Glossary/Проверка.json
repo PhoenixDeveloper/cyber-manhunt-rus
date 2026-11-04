@@ -1,0 +1,24 @@
+{
+  "name": "Cyber Manhunt EN-RU v1",
+  "entries": 120,
+  "term_entries": 60,
+  "name_entries": 60,
+  "csv_encoding": "UTF-8",
+  "csv_columns": 2,
+  "csv_header": false,
+  "sha256": "a9102719134e2888c3f8a79e747ec868c0940f4e9581bc3fe6a01449b130726f",
+  "imported_into_deepl": true,
+  "verified_online_entry_count": 120,
+  "language_pair": "EN-RU",
+  "main_comparison_cases": 18,
+  "additional_declension_cases": 5,
+  "additional_context_cases": 3,
+  "quality_limitations": [
+    "DeepL generated mixed-script accusative forms of улика in two probes.",
+    "Some glossary terms were integrated into sentences unnaturally.",
+    "This is not a guarantee for all game text."
+  ],
+  "game_modified": false,
+  "other_glossaries_modified": false,
+  "public_copy": true
+}

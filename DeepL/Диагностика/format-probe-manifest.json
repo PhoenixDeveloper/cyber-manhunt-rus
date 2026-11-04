@@ -1,0 +1,62 @@
+{
+  "p0001": {
+    "key": "^course06",
+    "mode": "name-equiv",
+    "original": "Click on the Toothbook link to enter the social network of the target person."
+  },
+  "p0002": {
+    "key": "^course0801",
+    "mode": "name-equiv",
+    "original": "Continue to investigate this Toothbook account. There may be other useful information."
+  },
+  "p0003": {
+    "key": "^course11",
+    "mode": "name-equiv",
+    "original": "Once you have<color=#CC1414> the real name </color>and additional information of the target person, you can use Titan's personal information database to obtain more private details."
+  },
+  "p0004": {
+    "key": "^link_event_01_desc",
+    "mode": "name-equiv",
+    "original": "After the suicide of Kapil Modi, founder of Defoss, reports circulated of poor management within the company. Shortly after the tragic event, Devos shut its doors. A competitor capitalized on the opportunity for market share, launching a rival drone delivery service. The endeavour won over investors by demonstrating the convenience and advantages of drone technology."
+  },
+  "p0005": {
+    "key": "^link_event_03_content",
+    "mode": "name-equiv",
+    "original": "My daughter Sala, 18 years old, has been missing for three days. She’s a student at St. Carlei Secondary School. She was last seen alone in the Orbiseed parking lot in Toronto. \\n(To find out more, check out indie puzzle game <Keyword> on Steam.)"
+  },
+  "p0006": {
+    "key": "^link_event_04_title",
+    "mode": "name-equiv",
+    "original": "Data breach of superstar’s private information leads to police\\n investigation"
+  },
+  "p0007": {
+    "key": "^course06",
+    "mode": "plain-names",
+    "original": "Click on the Toothbook link to enter the social network of the target person."
+  },
+  "p0008": {
+    "key": "^course0801",
+    "mode": "plain-names",
+    "original": "Continue to investigate this Toothbook account. There may be other useful information."
+  },
+  "p0009": {
+    "key": "^course11",
+    "mode": "plain-names",
+    "original": "Once you have<color=#CC1414> the real name </color>and additional information of the target person, you can use Titan's personal information database to obtain more private details."
+  },
+  "p0010": {
+    "key": "^link_event_01_desc",
+    "mode": "plain-names",
+    "original": "After the suicide of Kapil Modi, founder of Defoss, reports circulated of poor management within the company. Shortly after the tragic event, Devos shut its doors. A competitor capitalized on the opportunity for market share, launching a rival drone delivery service. The endeavour won over investors by demonstrating the convenience and advantages of drone technology."
+  },
+  "p0011": {
+    "key": "^link_event_03_content",
+    "mode": "plain-names",
+    "original": "My daughter Sala, 18 years old, has been missing for three days. She’s a student at St. Carlei Secondary School. She was last seen alone in the Orbiseed parking lot in Toronto. \\n(To find out more, check out indie puzzle game <Keyword> on Steam.)"
+  },
+  "p0012": {
+    "key": "^link_event_04_title",
+    "mode": "plain-names",
+    "original": "Data breach of superstar’s private information leads to police\\n investigation"
+  }
+}

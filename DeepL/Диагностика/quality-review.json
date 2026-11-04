@@ -1,0 +1,23 @@
+{
+  "pilot_source_units": 100,
+  "pilot_reviewed_units": 100,
+  "pilot_inline_codes": {
+    "protected_occurrences": 34,
+    "single_codes": 16,
+    "paired_codes": 6
+  },
+  "diagnostic_units": 12,
+  "preferred_diagnostic_units": 6,
+  "game_modified": false,
+  "portable_patches_modified": false,
+  "files": {
+    "Итоги проверки.txt": {
+      "bytes": 6768,
+      "sha256": "ac2431c01a4360481722a23b07fe3672223fe117a4cb3e2ea64fb8c126450da7"
+    },
+    "Сравнение 100 строк.txt": {
+      "bytes": 63345,
+      "sha256": "152d4d82a674685b1e76fca72499ba845f6827321711ff6fe0bc198a57bcd2ef"
+    }
+  }
+}

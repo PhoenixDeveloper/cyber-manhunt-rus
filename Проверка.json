@@ -3,7 +3,7 @@
   "macOS": {
     "game_build": "9369524",
     "version": "1.3.93",
-    "tests_passed": 12,
+    "tests_passed": 14,
     "checks": [
       "exact install/restore bytes",
       "repeated install and restore",
@@ -21,7 +21,10 @@
       "upgrade from revision 2 and two-file backup to revision 3 and three-file backup",
       "unknown assembly rejected before asset writes",
       "serialized UI type trees round-trip without changes before editing",
-      "disassembled IL differs only in two title uses and three dossier separators"
+      "disassembled IL differs only in two title uses and three dossier separators",
+      "upgrade from revision 3 with original backup and exact restore",
+      "upgrade from revision 3 without backup and exact restore",
+      "revision 4 installed resources and original backups verified by SHA-256"
     ],
     "game_launch_menu_subtitles_checked": true,
     "revision_2_installed_on_local_game": true,
@@ -43,11 +46,13 @@
       "instruction_and_explanation_readable": true,
       "crack_button_label_not_clipped": true,
       "gameplay_actions_performed": false
-    }
+    },
+    "revision_4_installed_on_local_game": true,
+    "revision_4_visual_check": "Not launched in revision 4. UI resources and display-only assembly bytes are identical to the previously checked revision 3; translation table is new."
   },
   "Windows": {
     "status": "experimental",
-    "tests_passed": 2,
+    "tests_passed": 3,
     "checks": [
       "all source strings and keys validated",
       "unknown and changed text rejected",
@@ -57,22 +62,75 @@
       "updated resources protected from old restore",
       "upgrade from revision 2 (two-file backup) and restore exact original bytes",
       "UI prefab paths and text type-tree validation",
-      "DLL display-string patch without PE layout changes"
+      "DLL display-string patch without PE layout changes",
+      "upgrade from revision 3 three-file backup, repeat, restore and reinstall on Windows-format fixture"
     ],
     "fixture": "Original macOS resources with serialized platform flag changed to StandaloneWindows64; not a Windows game release",
     "tested_on_real_windows": false,
     "runtime": "Bundled CPython 3.13.17 x64 and 16 Python packages",
     "system_dependency": "Microsoft Visual C++ Redistributable x64 (msvcp140.dll) may need installing"
   },
-  "revision": 3,
+  "revision": 4,
   "manual_review": {
     "total_rows": 674,
     "changed_rows_in_revision_2": 472,
     "all_16426_keys_placeholders_tags_and_other_language_columns_verified": true,
     "sql_command_example_verified": true,
     "full_game_proofread": false,
-    "changed_rows_in_revision_3": 17
+    "changed_rows_in_revision_3": 17,
+    "preserved_revision_3_rows": 674,
+    "preserved_revision_3_sha256": "12c711ced6096f9e076c1a4ed846df5ebf80c0b6f3948b222c93250387ffb6e4",
+    "clue_corrections": 68,
+    "additional_source_specific_corrections": 21
   },
   "ui_objects_edited": 136,
-  "assembly_display_edits": 4
+  "assembly_display_edits": 4,
+  "translation": {
+    "engine": "DeepL Translator Business (web file translation)",
+    "source_language": "en",
+    "target_language": "ru",
+    "glossary": "Cyber Manhunt EN-RU v2",
+    "glossary_entries": 254,
+    "original_glossary_entries_unchanged": 120,
+    "glossary_sha256": "96a13484baad2d23b10bdb2c5748690fbe46dc0ebe78e75590856ce9d242d099",
+    "unique_clue_units": 706,
+    "unique_main_units": 12280,
+    "retry_units": 317,
+    "accepted_units": 12986,
+    "format_errors_detected_and_resolved": 7,
+    "protected_values_unchanged": 644,
+    "fixed_clue_mentions_checked": 380,
+    "mixed_script_word_errors_remaining": 0,
+    "changed_urls_remaining": 0,
+    "native_glossary_name_audit_exception": "Cloud storage is correctly translated as облачное хранилище, not a character name.",
+    "integrity_tests_passed": 14,
+    "full_game_proofread": false,
+    "coverage": {
+      "rows": 16426,
+      "categories": {
+        "deepl_main": 12900,
+        "preserved_manual": 674,
+        "nonlinguistic_or_protected": 1186,
+        "protected_value": 644,
+        "clue_value": 1022
+      },
+      "manual_unchanged": 674,
+      "corrections": 21
+    },
+    "responses": {
+      "clues": {
+        "sha256": "c7ff577db0afee5d3c5abe7bd2a5185f43e8be1822abcea31406103fb8457c91",
+        "validated": 706
+      },
+      "main": {
+        "sha256": "1c5b3a5f04025b2d3850dfedb8b941e32624640a48cba58f43f176b420ef997c",
+        "validated": 12280
+      },
+      "retry": {
+        "sha256": "8cc4690b3648affcbbe0272958ad1304eb012cb0da92a6959c733fbf89b73056",
+        "validated": 317
+      }
+    },
+    "merged_translation_sha256": "8e4769653911eb8bbbd0977fbcb237eff68279cc3dd6bf3bdcacfaf036f8ae91"
+  }
 }

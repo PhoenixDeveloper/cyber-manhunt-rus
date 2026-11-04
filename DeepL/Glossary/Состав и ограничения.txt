@@ -1,0 +1,270 @@
+Cyber Manhunt — глоссарий EN → RU, версия 1
+
+120 записей: 60 терминов и 60 имён, названий и топонимов.
+
+Исходные выражения проверены по английской локализации Steam-сборки 9369524. Переводы выбраны по текущей ручной редактуре и контексту игры. Совпадение с источником не означает, что проверены все вхождения каждого термина.
+
+Термины
+
+clue → улика
+  Пример: ^txt_fishdialog3; строк с выражением: 20.
+Shared Folder → Общая папка
+  Пример: ^searchworld_event0107; строк с выражением: 14.
+Target Portrait → Досье
+  Пример: ^target_portrait; строк с выражением: 1.
+inference → выводы
+  Пример: ^system_hint0103_2; строк с выражением: 9.
+social engineering → социальная инженерия
+  Пример: ^btn_social; строк с выражением: 9.
+social engineering tools → инструменты социальной инженерии
+  Пример: ^btn_social; строк с выражением: 1.
+social work techniques → приёмы социальной инженерии
+  Пример: ^houtai78; строк с выражением: 1.
+phishing → фишинг
+  Пример: ^tab_camouflage; строк с выражением: 45.
+phishing link → фишинговая ссылка
+  Пример: ^txt_fishdialog1; строк с выражением: 12.
+Phishing Chat → Фишинг
+  Пример: ^tab_taohua; строк с выражением: 1.
+Picture Analysis → Анализ фото
+  Пример: ^tab_picAls; строк с выражением: 2.
+Related Pictures → Связанные фотографии
+  Пример: ^mission_content07; строк с выражением: 1.
+Similar pictures → Похожие фотографии
+  Пример: ^pic_btn2; строк с выражением: 2.
+Operation Log → Журнал действий
+  Пример: ^logpanel01; строк с выражением: 1.
+Behavior Record → Действия
+  Пример: ^mission_content03; строк с выражением: 1.
+Life Experience → Биография
+  Пример: ^mission_content04; строк с выражением: 4.
+access key → ключ доступа
+  Пример: ^title_mission0001; строк с выражением: 9.
+administrator key → ключ администратора
+  Пример: ^dialogue0003_0102; строк с выражением: 2.
+cracking tool → программа подбора паролей
+  Пример: ^password_tip02; строк с выражением: 2.
+hacking tool → инструмент взлома
+  Пример: ^course15; строк с выражением: 1.
+frequently used password → часто используемый пароль
+  Пример: ^clue_title0008; строк с выражением: 6.
+crack the password → подобрать пароль
+  Пример: ^prompt_event0103; строк с выражением: 1.
+Cracking failed → Пароль не найден
+  Пример: ^password_failed; строк с выражением: 1.
+real name → настоящее имя
+  Пример: ^clue_title0002; строк с выражением: 17.
+nickname → ник
+  Пример: ^clue_title0013; строк с выражением: 24.
+social security number → номер соцстрахования
+  Пример: ^clue_title0005; строк с выражением: 6.
+house number → номер дома
+  Пример: ^clue_title0007; строк с выражением: 10.
+date of birth → дата рождения
+  Пример: ^clue_title0004; строк с выражением: 23.
+email address → адрес электронной почты
+  Пример: ^mail_passwordLabel; строк с выражением: 18.
+email account → почтовый ящик
+  Пример: ^coursecontent0601; строк с выражением: 7.
+password reset → сброс пароля
+  Пример: ^change_password; строк с выражением: 7.
+Hitalk account → аккаунт Hitalk
+  Пример: ^clue_title0009; строк с выражением: 22.
+Hitalk ID → ID в Hitalk
+  Пример: ^clue_title0127; строк с выражением: 3.
+Toothbook account → аккаунт Toothbook
+  Пример: ^txt_newsSubTitle0106; строк с выражением: 7.
+group chat record → групповая переписка
+  Пример: ^clue_title0155_01; строк с выражением: 4.
+chat record → переписка
+  Пример: ^clue_title0155_01; строк с выражением: 5.
+search history → история поиска
+  Пример: ^tuili030401; строк с выражением: 6.
+personal information → личные данные
+  Пример: ^password_tip02; строк с выражением: 56.
+private information → личные данные
+  Пример: ^link_event_04_title; строк с выражением: 38.
+personal information database → база личных данных
+  Пример: ^course11; строк с выражением: 1.
+data breach → утечка данных
+  Пример: ^link_event_04_title; строк с выражением: 11.
+Access denied → Доступ запрещён
+  Пример: ^phishinglink12; строк с выражением: 2.
+network department → сетевой отдел
+  Пример: ^course20; строк с выражением: 1.
+Internet Practitioner → Специалист по IT
+  Пример: ^career_platform0001; строк с выражением: 1.
+private investigator → частный детектив
+  Пример: ^link_event_02_title; строк с выражением: 8.
+private detective → частный детектив
+  Пример: ^110008_email_8; строк с выражением: 9.
+call records → журнал звонков
+  Пример: ^call_record; строк с выражением: 2.
+surveillance camera → камера наблюдения
+  Пример: ^surveillance02; строк с выражением: 2.
+phone number → номер телефона
+  Пример: ^clue_title0006; строк с выражением: 27.
+IP address → IP-адрес
+  Пример: ^invade_label24; строк с выражением: 1.
+backdoor → бэкдор
+  Пример: ^houtai111; строк с выражением: 2.
+firewall → межсетевой экран
+  Пример: ^invade_label29; строк с выражением: 6.
+malware → вредоносное ПО
+  Пример: ^yulun_label144; строк с выражением: 2.
+cybercrime → киберпреступность
+  Пример: ^beginingcontent0801; строк с выражением: 4.
+cyberbullying → травля в интернете
+  Пример: ^demoinfor01; строк с выражением: 7.
+dark web → даркнет
+  Пример: ^autonews_label16; строк с выражением: 9.
+public opinion → общественное мнение
+  Пример: ^dialogue0105_01; строк с выражением: 41.
+network tracking → отслеживание в сети
+  Пример: ^F2E4184E-3FFA-B538-DA52-D4965A7136B9; строк с выражением: 2.
+Software Engineer → Инженер-программист
+  Пример: ^career_platform0102; строк с выражением: 2.
+collect information → собрать сведения
+  Пример: ^pic_btn1; строк с выражением: 2.
+Названия и топонимы
+
+Cyber Manhunt → Cyber Manhunt
+  Пример: ^demo01; строк с выражением: 9.
+Titan → Titan
+  Пример: ^txt_newsSubTitle0106; строк с выражением: 461.
+Titan Matrix → Titan Matrix
+  Пример: ^txt_newsSubTitle0106; строк с выражением: 111.
+Hitalk → Hitalk
+  Пример: ^btn_chat; строк с выражением: 95.
+Toothbook → Toothbook
+  Пример: ^URL_event0001; строк с выражением: 189.
+Defoss → Defoss
+  Пример: ^link_event_01_desc; строк с выражением: 46.
+Devos → Devos
+  Пример: ^link_event_01_desc; строк с выражением: 2.
+GrooMusic → GrooMusic
+  Пример: ^txt_sign0135; строк с выражением: 45.
+TwoDrive → TwoDrive
+  Пример: ^URL_event0107; строк с выражением: 9.
+Imeet → Imeet
+  Пример: ^title_event0101; строк с выражением: 62.
+Steam → Steam
+  Пример: ^link_event_01_content2; строк с выражением: 11.
+Orbiseed → Orbiseed
+  Пример: ^link_event_03_content; строк с выражением: 1.
+Holmes → Holmes
+  Пример: ^link_event_02_content; строк с выражением: 2.
+VAN+ → VAN+
+  Пример: ^news0517; строк с выражением: 11.
+Gauti → Gauti
+  Пример: ^address_platform0001; строк с выражением: 88.
+Demanra → Demanra
+  Пример: ^dialogue_type0004; строк с выражением: 19.
+Pedro → Pedro
+  Пример: ^dialogue_type0006; строк с выражением: 10.
+Полные имена
+
+Vincent Valen Park → Vincent Valen Park
+  Пример: ^110008_common_46; строк с выражением: 7.
+Anthony Beakland → Anthony Beakland
+  Пример: ^title_event0125; строк с выражением: 25.
+Isabelle Auteuil → Isabelle Auteuil
+  Пример: ^message_event0394; строк с выражением: 6.
+Lucrezia Borgia → Lucrezia Borgia
+  Пример: ^houtai69; строк с выражением: 65.
+Simon Cavendish → Simon Cavendish
+  Пример: ^110008_common_41; строк с выражением: 17.
+Theresa Meadows → Theresa Meadows
+  Пример: ^EC72854D-1DE0-F772-0972-70BF4781FC26; строк с выражением: 16.
+Ashley Clayson → Ashley Clayson
+  Пример: ^emailsender_event0102; строк с выражением: 28.
+Barbara Miller → Barbara Miller
+  Пример: ^phone_reply0424; строк с выражением: 4.
+Benjamin Engel → Benjamin Engel
+  Пример: ^end_van101; строк с выражением: 25.
+Glory Atkinson → Glory Atkinson
+  Пример: ^searchworld_event0504; строк с выражением: 6.
+Vincent Runner → Vincent Runner
+  Пример: ^110008_common_66; строк с выражением: 3.
+Carter Harris → Carter Harris
+  Пример: ^title_event0107; строк с выражением: 14.
+Dwight Durant → Dwight Durant
+  Пример: ^sign_platform057001; строк с выражением: 8.
+Elsie Cameron → Elsie Cameron
+  Пример: ^message_event0216; строк с выражением: 8.
+George Rogers → George Rogers
+  Пример: ^message_event03103; строк с выражением: 2.
+Thomas Conway → Thomas Conway
+  Пример: ^message_event0002; строк с выражением: 4.
+Adam Edwards → Adam Edwards
+  Пример: ^role_name0203; строк с выражением: 5.
+Alfred Whyet → Alfred Whyet
+  Пример: ^name_ht0519; строк с выражением: 2.
+Erica Miriam → Erica Miriam
+  Пример: ^message_event0579; строк с выражением: 3.
+Jon Thompson → Jon Thompson
+  Пример: ^role_name0204; строк с выражением: 11.
+Mackie Cousy → Mackie Cousy
+  Пример: ^message_event0367; строк с выражением: 7.
+Noriyuki Ito → Noriyuki Ito
+  Пример: ^phone_reply0402; строк с выражением: 30.
+Sean Dishman → Sean Dishman
+  Пример: ^phone_name0501; строк с выражением: 21.
+Austin Hill → Austin Hill
+  Пример: ^email0304; строк с выражением: 12.
+Barbie Saya → Barbie Saya
+  Пример: ^content_platform01111; строк с выражением: 234.
+Cloud Shawn → Cloud Shawn
+  Пример: ^110008_common_54; строк с выражением: 9.
+Coral Stock → Coral Stock
+  Пример: ^email041002; строк с выражением: 5.
+Emily Mayer → Emily Mayer
+  Пример: ^3D6F8A9E-2BAE-DFA3-42E3-A6C11715A5CB; строк с выражением: 3.
+Herbert Lee → Herbert Lee
+  Пример: ^91B39DBE-FC72-238E-813D-DAD1CC532E22; строк с выражением: 12.
+Lisa Snyder → Lisa Snyder
+  Пример: ^txt_newsTitle0101; строк с выражением: 42.
+Mason Toney → Mason Toney
+  Пример: ^message_event0238; строк с выражением: 8.
+Paul Paxson → Paul Paxson
+  Пример: ^message_event0531; строк с выражением: 11.
+Daniel Kos → Daniel Kos
+  Пример: ^message_event0144; строк с выражением: 21.
+Dora Watts → Dora Watts
+  Пример: ^sign_platform0517; строк с выражением: 4.
+Kapil Modi → Kapil Modi
+  Пример: ^link_event_01_title; строк с выражением: 28.
+Tom Blanco → Tom Blanco
+  Пример: ^message_event0010; строк с выражением: 61.
+Cody Hoyt → Cody Hoyt
+  Пример: ^voice0502; строк с выражением: 4.
+Jim Jones → Jim Jones
+  Пример: ^message_event0385; строк с выражением: 9.
+William Knight → William Knight
+  Пример: ^emailtitle_event0001; строк с выражением: 2.
+Guo Chen → Guo Chen
+  Пример: ^link_event_02_title; строк с выражением: 3.
+Himani Modi → Himani Modi
+  Пример: ^emailsender_event0110; строк с выражением: 1.
+Rudolph Dishman → Rudolph Dishman
+  Пример: ^emailsender_event0511; строк с выражением: 3.
+James Joyce → James Joyce
+  Пример: ^emailinfo_event0119_01; строк с выражением: 9.
+
+Правила использования и исключения
+
+• Нельзя заменять глоссарием 674 ручные правки: в них учтены вёрстка, задания и контекст диалогов.
+• Имена и названия сохранены латиницей для согласованности с уликами и вводом в игровых приложениях. Глоссарий не заменяет проверку неизменности игровых значений при импорте.
+• Отдельные фамилии и однословные имена не добавлены автоматически. Например, Knight может означать рыцаря, а Cloud — облако. Для них нужна защита по контексту в XLIFF.
+• Убраны общие key, crack, account, follow, target, name и ID number: они неоднозначны. Есть точные выражения access key, administrator key, crack the password, email account и другие.
+• CRACK в заголовке остаётся «ВЗЛОМ» благодаря отдельной ручной правке. В репликах crack under pressure означает «сломаться под давлением». Одно общее правило испортило бы один из этих контекстов.
+• ID number обычно соответствует номеру соцстрахования в китайском тексте этой игры, но в одной форме обозначает просто номер записи. Требуется обработка конкретных строк, а не глобальная замена.
+• Короткие Имя, ID, Ник, Дата рожд., № дома, Факт нужны именно в узких полях интерфейса. В сюжетном тексте используются полные формы.
+• Defoss и Devos, Paul Paxson и другие варианты исходника нельзя самовольно объединять: сначала нужно проверить, опечатка ли это. Глоссарий сохраняет найденные в английском тексте формы.
+• Изменение регистра, окончания слова и перестановка слов зависят от переводчика. Одни только записи не гарантируют неизменность идентификаторов.
+• Разметка, переменные, переносы, смысл выделения цветом и обращения ты/вы проверяются отдельно.
+
+Официальная справка DeepL:
+https://support.deepl.com/hc/en-us/articles/360021664739-Glossary-upload
+https://support.deepl.com/hc/en-us/articles/360021634540-About-the-glossary
+https://support.deepl.com/hc/en-us/articles/4411401630226-Apply-a-glossary-to-file-translation

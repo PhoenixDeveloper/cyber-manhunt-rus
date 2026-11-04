@@ -3,11 +3,13 @@
   "game": "Cyber Manhunt",
   "platform": "Windows",
   "experimental": true,
-  "translation_sha256": "fc2d64d5bb95fef7f9d661506d4f222342a14a835f110b0db8de1a794aa85771",
+  "translation_sha256": "a1c383f1a689e8e916bac65f7ceb1a9090baee0e27b7ff8a5860f5d624b6f28c",
   "source_game_version": "1.3.93",
   "source_steam_build": "9369524",
-  "translated_rows": 14079,
+  "translated_rows": 14031,
   "language_slot": "EN",
-  "revision": 3,
-  "reviewed_rows": 674
+  "revision": 4,
+  "reviewed_rows": 674,
+  "translation_engine": "DeepL Translator Business",
+  "glossary": "Cyber Manhunt EN-RU v2 (254 entries)"
 }

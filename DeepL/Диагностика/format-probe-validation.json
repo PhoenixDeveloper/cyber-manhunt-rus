@@ -1,0 +1,11 @@
+{
+  "input_file": "../RusForGames/Cyber Manhunt/DeepL/Результат/CyberManhunt_FORMAT_TEST_EN-RU ru.xlf",
+  "input_sha256": "0aa24c6ef8bf4b99668f149f2e45ea92f55d042e91f9a462884ecafb7df3b14f",
+  "validated_units": 12,
+  "installed": false,
+  "preferred_mode": "name-equiv",
+  "preferred_mode_validated_rows": 6,
+  "scope": "Six selected problematic source strings, two encodings; not a whole-game quality guarantee.",
+  "finding": "Named ph placeholders with equiv and real XML newlines fixed the observed name-boundary and newline errors. Paired color formatting still needs semantic review.",
+  "rejected_mode_reason": "Plain names changed Titan and Sala and changed source Devos to Defoss."
+}
