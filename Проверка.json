@@ -1,39 +1,28 @@
 {
-  "revision": 12,
+  "revision": 13,
   "date": "2026-11-04",
   "changed_keys": {
-    "^phone_reply0420": "Господин Ito, я не дура. Для начала покажите, что настроены серьёзно.",
-    "^phone_reply0424": "Barbie Saya — псевдоним. Я видела её карту соцстрахования. Настоящее имя — Barbara Miller. Обычное деревенское имя. Не подалась бы в артистки — до сих пор доила бы коров на ферме!",
-    "^phone_reply0427": "Конечно, я даже сфотографировала её, и фотография окажется в вашем почтовом ящике, как только поступят деньги!",
-    "^phone_reply042701": "сфотографировала",
-    "^phone_reply0429": "Э-э, подождите, я ещё не закончила!"
+    "^Witapedia0403": "июнь 2018"
   },
-  "MagicQ_phone": "201-5564-868",
-  "reachable_conversation_nodes_checked": 44,
-  "player_replies_unchanged": true,
+  "original_english_value": "43252",
+  "original_chinese_value": "2018年6月",
+  "change_is_display_only": true,
+  "MagicQ_revision12_fixes_preserved": true,
   "all_previous_manual_edits_preserved": true,
-  "clue_id": "#10445",
-  "clue_bindings_verified": true,
-  "phone_fragment_model_cases_passed": 153,
-  "font_sizes": [
-    17,
-    18,
-    19
-  ],
-  "width_range": [
-    225,
-    275
-  ],
+  "configured_clue_bindings_verified": 257,
+  "runtime_clue_bindings_verified": 2,
   "mac_and_windows_translation_rows_identical": true,
-  "native_phone_hover_after_fix_checked": false,
+  "other_three_game_files_unchanged_from_revision12": true,
   "tested_on_real_windows": false,
-  "installed_on_user_mac": false,
-  "validation_status": "all checks passed; local installation pending",
-  "other_three_game_files_unchanged_from_revision11": true,
-  "installer_checks_passed": 3,
+  "native_date_rendering_checked": false,
+  "installed_on_user_mac": true,
   "installer_checks": [
-    "Mac v11 upgrade with original backup, repeat, exact restore",
-    "Mac v11 upgrade without backup, repeat, exact restore",
-    "Windows-format v11 upgrade, repeat, restore, reinstall"
-  ]
+    "Windows-format v12 upgrade, all localization columns, exact restore",
+    "Mac v12 without backup upgrade, repeat, exact restore",
+    "Actual Mac v11 upgrade with original backup, installed hashes verified"
+  ],
+  "installed_upgrade_from_revision": 11,
+  "installed_files_sha256_verified": 4,
+  "original_backup_files_sha256_verified": 4,
+  "validation_status": "all checks passed; installed on user Mac"
 }
