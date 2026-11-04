@@ -1,35 +1,34 @@
 {
-  "revision": 15,
+  "revision": 16,
   "date": "2026-11-05",
-  "fix": "Phone numeric lock hint clipping",
-  "layout_path": "phonenumDialog/bk/content/tiptxt",
-  "changed_layout_objects": 3,
-  "hint_size_ui_units": [
-    400,
-    72
-  ],
-  "hint_font_min_max": [
-    18,
-    22
-  ],
-  "hint_alignment": "upper center",
-  "hint_wrap_model": "Roboto font from game resources, 22 px; widths 360, 380 and 400; two lines fit in 72 UI units; original 30-unit height insufficient",
-  "hint_and_error_do_not_overlap_input_or_OK": true,
-  "all_translation_rows_unchanged_from_revision14": true,
-  "quiz_and_password_logic_unchanged": true,
-  "other_three_resource_files_unchanged_from_revision14": true,
-  "private_and_Windows_layout_implementation_identical": true,
-  "all_Windows_serialized_object_payloads_match_corrected_mac_resources": true,
+  "fix": "Public-opinion interface and commentator assignment window",
+  "text_changes": 55,
+  "layout_changed_objects": 55,
+  "categories_below_engine_12_character_limit": true,
+  "counter_bounds_before_minus_button_verified": true,
+  "bottom_instruction_inside_panel": true,
+  "text_fit_model_cases_passed": 33,
+  "model_includes_nonbreaking_spaces": true,
+  "all_16426_rows_and_source_language_columns_verified": true,
+  "configured_clue_bindings_verified": 257,
+  "runtime_clue_bindings_verified": 2,
+  "tutorial_fragment_bindings_verified": 4,
+  "Windows_layout_independent_of_Mac_script_ids_verified": true,
+  "mac_and_windows_text_rows_identical": true,
+  "all_Windows_serialized_objects_match_corrected_mac_resources": true,
+  "gameplay_assembly_and_date_configuration_unchanged": true,
+  "all_previous_edits_preserved": true,
   "installer_checks": [
-    "Mac v14 without backup upgrade, repeat, exact restore",
-    "Windows-format v14 upgrade, every object verified, exact restore",
-    "Actual Mac v14 upgrade with original backup, installed hashes verified"
+    "Mac v15 without backup upgrade, repeat, exact restore",
+    "Windows-format v15 upgrade, every object verified, exact restore",
+    "Actual Mac v15 upgrade with original backup, installed hashes verified"
   ],
   "installed_on_user_mac": true,
-  "installed_upgrade_from_revision": 14,
-  "installed_files_sha256_verified": 4,
-  "original_backup_files_sha256_verified": 4,
+  "local_installation_status": "installed; all resource and original backup hashes verified",
   "native_Unity_layout_checked_after_fix": false,
   "tested_on_real_windows": false,
-  "validation_status": "all resource and layout model checks passed; installed on user Mac"
+  "validation_status": "all resource and layout model checks passed; installed on user Mac",
+  "installed_upgrade_from_revision": 15,
+  "installed_files_sha256_verified": 4,
+  "original_backup_files_sha256_verified": 4
 }

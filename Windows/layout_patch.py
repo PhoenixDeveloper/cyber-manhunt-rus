@@ -53,9 +53,27 @@ def patch_layout(env):
     keys = (b'^psw_', b'^sql01', b'^sql02', b'^copy', b'^open', b'^paste', b'^password', b'^txt_pwtitle',
             b'^tuili4007', b'^tuili0458', b'^tuili0459', b'^tuili0460', b'^tuili0461',
             b'^invade_phone0403', b'^twodrive_label06')
+    opinion_roots = {'yulunDialog', 'yulunDialogOther', 'tiplist', 'yulun_newshotlist', 'yulun_zfile', 'yulun_ffile'}
+    def text_shape(raw):
+        # Unity 2019 UI.Text with an empty component name and no cull listeners.
+        # Validate its bounded string field before reading the common type tree;
+        # script/object IDs may differ between macOS and Windows builds.
+        if len(raw) < 128 or raw[28:32] != b'\0'*4 or raw[64:68] != b'\0'*4:
+            return False
+        length = struct.unpack_from('<i', raw, 124)[0]
+        return length >= 0 and (128 + length + 3) // 4 * 4 == len(raw)
     for i, obj in objects.items():
-        if obj.type.name != 'MonoBehaviour' or not any(k in obj.get_raw_data() for k in keys):
+        if obj.type.name != 'MonoBehaviour':
             continue
+        raw = obj.get_raw_data()
+        if not any(k in raw for k in keys):
+            # Runtime-populated UI labels have no localization key in the prefab.
+            # Only read Unity UI.Text components in the selected PR prefabs.
+            if not text_shape(raw):
+                continue
+            go = struct.unpack_from('<q', raw, 4)[0]
+            if path(go).split('/')[0] not in opinion_roots:
+                continue
         try:
             old = obj.read_typetree(nodes=nodes)
         except Exception:
@@ -70,12 +88,48 @@ def patch_layout(env):
         note = root in ('noteitem', 'noteitem_dlc', 'noteitem_dlc7', 'noteitem1', 'noteitem3')
         coral = root == 'ReasoningPanel4007'
         phone_number = root == 'phonenumDialog'
-        if not (password or database or note or coral or phone_number):
+        opinion = root in opinion_roots
+        if not (password or database or note or coral or phone_number or opinion):
             continue
         value = copy.deepcopy(old)
         font = value['m_FontData']; key = value['m_Text']
         rect_id = go2tr[go]; rect = copy.deepcopy(trs[rect_id])
-        if phone_number and p == 'phonenumDialog/bk/content/tiptxt' and key == '^invade_phone0403':
+        if opinion:
+            key = key.strip()
+            if key in {f'^yulun_label{n}' for n in range(232, 238)}:
+                fit(font, 16, 20)
+            elif key == '^yulun_label231':
+                fit(font, 14, 20)
+            elif key in {'^yulun_label239', '^yulun_label240', '^yulun_label241'}:
+                fit(font, 18, 24)
+            elif key in {'^yulun_label242', '^yulun_label243'}:
+                fit(font, 14, 20)
+            elif key in {'^yulun_label245', '^yulun_label246', '^yulun_label230'}:
+                fit(font, 18, 26)
+            elif p.endswith('/controlbox/outbox/box_middle/boxinfo/box_shuijun/txt_tip'):
+                # One localized label includes the live (assigned/available)
+                # counter. Its right edge must stop before the minus button.
+                fit(font, 18, 24)
+                font['m_Alignment'] = 3
+                rect['m_SizeDelta'].update(x=312.0, y=36.0)
+            elif p.endswith('/controlbox/bottombox/Text'):
+                fit(font, 18, 22)
+                rect['m_SizeDelta'].update(x=700.0, y=34.0)
+            elif p.endswith('/dataDialog/analysis/topinfobox/txt_bodyName'):
+                fit(font, 22, 32)
+            elif '/dataDialog/analysis/' in p and p.endswith('/val'):
+                fit(font, 24, 36)
+            elif p.endswith('/box_penzi /Text'):
+                fit(font, 16, 22)
+            elif p.endswith('/box_penzi /penzival/txt_info'):
+                fit(font, 14, 20)
+            elif p.endswith('/img_shuijunbox/Text'):
+                fit(font, 12, 18)
+            elif p == 'tiplist/Text':
+                fit(font, 14, 20)
+            elif p == 'yulun_newshotlist/txt_info':
+                fit(font, 14, 20)
+        elif phone_number and p == 'phonenumDialog/bk/content/tiptxt' and key == '^invade_phone0403':
             # Keep the full hint below the four input boxes. Two lines need
             # more than the original 30 units; the panel is 464 units wide.
             fit(font, 18, 22)
