@@ -1,79 +1,98 @@
 {
-  "revision": 6,
+  "revision": 7,
   "date": "2026-11-04",
-  "date_format": "DD.MM.YYYY",
-  "text_rows_updated": 257,
-  "titan_birth_records_checked": 38,
-  "date_tests_passed": 6,
-  "macOS_installer_tests_passed": 18,
-  "windows_format_installer_tests_passed": 5,
-  "total_tests_passed": 29,
-  "macOS_installed": true,
-  "installed_resources_and_original_backups_sha256_verified": true,
-  "source_keys_placeholders_tags_verified": 16426,
-  "clue_text_links_verified": 257,
-  "password_outputs_unchanged": true,
-  "assembly_bytes_identical_to_revision_5": true,
-  "configuration_change": "Only English birth-date field 8; all other configuration bytes unchanged",
-  "native_gameplay_check_revision_6": false,
-  "tested_on_real_windows": false,
-  "full_playthrough_tested": false,
-  "notes": [
-    "Full numeric dates in text and the Titan English date column localized. Existing Russian dates retained.",
-    "Drawn image text and internal timestamps were not changed.",
-    "Original Shirley record 3110016 differs by year between Chinese and English columns (1991 vs 1989); original EN calendar value retained, only order changed.",
-    "Initial Mac test run overlapped manifest generation and rejected the old manifest. All 18 Mac tests passed after generation completed; the five Windows-format and six date tests passed in the combined run."
+  "fix": "Walker clue highlight split over three lines",
+  "root_cause_confirmed_in_local_player_log": "ArgumentOutOfRangeException at TextBkg.DivideStr, second-line Substring",
+  "fix_scope": "Two highlight strings shortened to поженились; dialogue bodies, game assembly and logic unchanged",
+  "changed_keys": [
+    "^message_event0113_01",
+    "^phone_reply011402_01"
   ],
-  "installed_hashes": {
-    "sharedassets0.assets": "c8252140a4169770922858d48ab0ed637aa8e5ed465845853588a87d1331ef7c",
-    "resources.assets": "7a732b146cdc9cac95bea6cb241b5bb99c3ef3bd6dcdf608e0dfbbd9c5d35982",
-    "Managed/Assembly-CSharp.dll": "2173ecdab890155fd38874dd2b158db340143095ed72dbda17159e4b3f6ac2e5",
-    "StreamingAssets/DataConfig/tnt_deploy_data44.data": "cbcaec19fceb6af0a453c00878f8d896e8d3618d264a3e9c61230f75e6ef0466"
-  },
-  "literary_review_base_revision_5": {
-    "revision": 5,
+  "reported_three_line_layout_regression_reproduced": true,
+  "both_phone_branches_clue_substrings_verified": true,
+  "all_257_configured_clue_links_verified": true,
+  "installer_tests_passed_this_revision": 8,
+  "tests": "Mac v6 upgrade with/without backup; Windows-format upgrades v2–v6, repeated installs, exact restore and changed-source rejection",
+  "macOS_installed_hashes_and_original_backups_verified": true,
+  "native_gameplay_after_fix_checked": false,
+  "tested_on_real_windows": false,
+  "previous_revision_6_validation": {
+    "revision": 6,
     "date": "2026-11-04",
-    "scope": "Entire shipped EN text table: main story, tutorial, DLC, optional texts and UI",
-    "source_rows": 16426,
-    "unique_prose_records_read": 13183,
-    "prose_keys_read": 13929,
-    "technical_and_identity_audit": {
-      "total_keys": 2497,
-      "unique_values": 1687,
-      "manually_inspected_unique_candidates": 617,
-      "classified_preserved_values": 1070,
-      "translated_keys": 51,
-      "preserved": "Search identities, handles, passwords, addresses, file paths, URLs, IDs, credits, code and numeric/punctuation-only values retained."
-    },
-    "changed_keys_from_revision_4": 5973,
-    "translated_rows": 14043,
-    "prior_manual_source_rows": 674,
-    "prior_manual_source_sha256": "12c711ced6096f9e076c1a4ed846df5ebf80c0b6f3948b222c93250387ffb6e4",
-    "prior_manual_rows_unchanged": 664,
-    "prior_manual_rows_editorially_refined": 10,
-    "checks": {
-      "all_keys_tokens_tags_and_line_breaks": true,
-      "all_source_urls_unchanged": true,
-      "mixed_script_words": 0,
-      "identity_password_values_unchanged": 220,
-      "exact_clue_text_links_passed": 257,
-      "unresolved_link_regressions": 0,
-      "other_configured_links_classified": {
-        "Search-query label versus result snippet; absent as a substring in the original too.": 23,
-        "No localized body text configured.": 2,
-        "The whole displayed text is itself the clue; exact same localization key.": 66,
-        "DLC conclusion versus evidence title list; separately displayed entries, not substrings.": 62
-      }
-    },
-    "limited_adaptations": "Four sexualized advertisements involving minors were rendered non-graphically; trafficking/abuse plot and necessary clues retained.",
-    "full_game_playthrough_tested": false,
-    "images_and_audio_translated": false,
-    "known_source_details": [
-      "Protected Macheal Holdom identity retains original game spelling; prose uses source Michael Holdom.",
-      "Original unused/alternate DLC scene dates and ages are retained where source variants conflict.",
-      "Original markup tokens, including irregular source markup, are preserved."
+    "date_format": "DD.MM.YYYY",
+    "text_rows_updated": 257,
+    "titan_birth_records_checked": 38,
+    "date_tests_passed": 6,
+    "macOS_installer_tests_passed": 18,
+    "windows_format_installer_tests_passed": 5,
+    "total_tests_passed": 29,
+    "macOS_installed": true,
+    "installed_resources_and_original_backups_sha256_verified": true,
+    "source_keys_placeholders_tags_verified": 16426,
+    "clue_text_links_verified": 257,
+    "password_outputs_unchanged": true,
+    "assembly_bytes_identical_to_revision_5": true,
+    "configuration_change": "Only English birth-date field 8; all other configuration bytes unchanged",
+    "native_gameplay_check_revision_6": false,
+    "tested_on_real_windows": false,
+    "full_playthrough_tested": false,
+    "notes": [
+      "Full numeric dates in text and the Titan English date column localized. Existing Russian dates retained.",
+      "Drawn image text and internal timestamps were not changed.",
+      "Original Shirley record 3110016 differs by year between Chinese and English columns (1991 vs 1989); original EN calendar value retained, only order changed.",
+      "Initial Mac test run overlapped manifest generation and rejected the old manifest. All 18 Mac tests passed after generation completed; the five Windows-format and six date tests passed in the combined run."
     ],
-    "translations_sha256": "579f0184e914fd1b99d481243a38f51b052ca09b5fb814971c2147f91e544f44",
-    "literary_overrides_sha256": "a866ebcf4a846ddfc3b849694ee34a37b4aa98df296b4b68ccca700a34aa18a1"
+    "installed_hashes": {
+      "sharedassets0.assets": "c8252140a4169770922858d48ab0ed637aa8e5ed465845853588a87d1331ef7c",
+      "resources.assets": "7a732b146cdc9cac95bea6cb241b5bb99c3ef3bd6dcdf608e0dfbbd9c5d35982",
+      "Managed/Assembly-CSharp.dll": "2173ecdab890155fd38874dd2b158db340143095ed72dbda17159e4b3f6ac2e5",
+      "StreamingAssets/DataConfig/tnt_deploy_data44.data": "cbcaec19fceb6af0a453c00878f8d896e8d3618d264a3e9c61230f75e6ef0466"
+    },
+    "literary_review_base_revision_5": {
+      "revision": 5,
+      "date": "2026-11-04",
+      "scope": "Entire shipped EN text table: main story, tutorial, DLC, optional texts and UI",
+      "source_rows": 16426,
+      "unique_prose_records_read": 13183,
+      "prose_keys_read": 13929,
+      "technical_and_identity_audit": {
+        "total_keys": 2497,
+        "unique_values": 1687,
+        "manually_inspected_unique_candidates": 617,
+        "classified_preserved_values": 1070,
+        "translated_keys": 51,
+        "preserved": "Search identities, handles, passwords, addresses, file paths, URLs, IDs, credits, code and numeric/punctuation-only values retained."
+      },
+      "changed_keys_from_revision_4": 5973,
+      "translated_rows": 14043,
+      "prior_manual_source_rows": 674,
+      "prior_manual_source_sha256": "12c711ced6096f9e076c1a4ed846df5ebf80c0b6f3948b222c93250387ffb6e4",
+      "prior_manual_rows_unchanged": 664,
+      "prior_manual_rows_editorially_refined": 10,
+      "checks": {
+        "all_keys_tokens_tags_and_line_breaks": true,
+        "all_source_urls_unchanged": true,
+        "mixed_script_words": 0,
+        "identity_password_values_unchanged": 220,
+        "exact_clue_text_links_passed": 257,
+        "unresolved_link_regressions": 0,
+        "other_configured_links_classified": {
+          "Search-query label versus result snippet; absent as a substring in the original too.": 23,
+          "No localized body text configured.": 2,
+          "The whole displayed text is itself the clue; exact same localization key.": 66,
+          "DLC conclusion versus evidence title list; separately displayed entries, not substrings.": 62
+        }
+      },
+      "limited_adaptations": "Four sexualized advertisements involving minors were rendered non-graphically; trafficking/abuse plot and necessary clues retained.",
+      "full_game_playthrough_tested": false,
+      "images_and_audio_translated": false,
+      "known_source_details": [
+        "Protected Macheal Holdom identity retains original game spelling; prose uses source Michael Holdom.",
+        "Original unused/alternate DLC scene dates and ages are retained where source variants conflict.",
+        "Original markup tokens, including irregular source markup, are preserved."
+      ],
+      "translations_sha256": "579f0184e914fd1b99d481243a38f51b052ca09b5fb814971c2147f91e544f44",
+      "literary_overrides_sha256": "a866ebcf4a846ddfc3b849694ee34a37b4aa98df296b4b68ccca700a34aa18a1"
+    }
   }
 }
