@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parent
 
 def load_payload():
     manifest = json.loads((ROOT / 'manifest.json').read_text(encoding='utf-8'))
-    if manifest.get('format') != 1 or manifest.get('platform') != 'macOS' or set(manifest['files']) != {'sharedassets0.assets', 'resources.assets', 'Managed/Assembly-CSharp.dll'}:
+    if manifest.get('format') != 1 or manifest.get('platform') != 'macOS' or set(manifest['files']) != {'sharedassets0.assets', 'resources.assets', 'Managed/Assembly-CSharp.dll', 'StreamingAssets/DataConfig/tnt_deploy_data44.data'}:
         raise PatchError('Неподдерживаемый манифест патча.')
     patches = {}
     for name, entry in manifest['files'].items():
@@ -34,7 +34,7 @@ def load_payload():
             if not re.fullmatch('[0-9a-f]{64}', previous['sha256']) or not 0 < previous['size'] < 300 * 1024 * 1024:
                 raise PatchError('Повреждён манифест предыдущего перевода.')
             info = previous['restore']
-            if not re.fullmatch(re.escape(Path(name).name) + r'\.restore-v[1234]\.bsdiff', info['file']):
+            if not re.fullmatch(re.escape(Path(name).name) + r'\.restore-v[12345]\.bsdiff', info['file']):
                 raise PatchError('Некорректное имя патча предыдущего перевода.')
             content = (ROOT / 'payload' / info['file']).read_bytes()
             if len(content) != info['size'] or digest(content) != info['sha256']:

@@ -1,29 +1,29 @@
 {
   "format": 1,
-  "revision": 5,
+  "revision": 6,
   "game": "Cyber Manhunt",
   "platform": "macOS",
   "steam_app_id": "1216710",
   "steam_build": "9369524",
   "game_version": "1.3.93",
   "language_slot": "EN",
-  "translated_rows": 14043,
+  "translated_rows": 14153,
   "reviewed_rows": 16426,
   "files": {
     "sharedassets0.assets": {
       "original_sha256": "7320c01eb64b7c82719455d931bf06c6b7eda7d8c5aca767d9bccc5fc6ee18dc",
-      "patched_sha256": "4c6241794111ecae169299952479561b73ef7318413be299f5ec690967fd80d3",
+      "patched_sha256": "c8252140a4169770922858d48ab0ed637aa8e5ed465845853588a87d1331ef7c",
       "original_size": 7127556,
       "patched_size": 8724128,
       "install": {
         "file": "sharedassets0.assets.install.bsdiff",
-        "sha256": "4c2f743f68d9fa4fb369562a5744d621653df909b8e54976a637b4c797727118",
-        "size": 312975
+        "sha256": "f1fbb81568630877208ca616a5b93014e635e447df4534da86e49b8cde5b0f96",
+        "size": 314469
       },
       "restore": {
         "file": "sharedassets0.assets.restore.bsdiff",
-        "sha256": "9192c2226ce045e3e29b2930a836ffdacacd4697df9a1d30ba9dd5b543033330",
-        "size": 749433
+        "sha256": "19cbd119bd3e1c4b3c69649a3070fe939f394ee4d70fb827920a3b34531f5628",
+        "size": 750368
       },
       "previous": [
         {
@@ -60,6 +60,15 @@
             "file": "sharedassets0.assets.restore-v4.bsdiff",
             "sha256": "6096ea43631ce2b60b10fd2c13776a1a967c71b192621ee03988b2b4f352227a",
             "size": 751439
+          }
+        },
+        {
+          "sha256": "4c6241794111ecae169299952479561b73ef7318413be299f5ec690967fd80d3",
+          "size": 8724128,
+          "restore": {
+            "file": "sharedassets0.assets.restore-v5.bsdiff",
+            "sha256": "9192c2226ce045e3e29b2930a836ffdacacd4697df9a1d30ba9dd5b543033330",
+            "size": 749433
           }
         }
       ]
@@ -105,6 +114,22 @@
         "file": "Assembly-CSharp.dll.restore.bsdiff",
         "sha256": "1b95b31c428615cf89fedc167337c3950f0ca1af6184ae3e36df77b9da6aac35",
         "size": 198
+      }
+    },
+    "StreamingAssets/DataConfig/tnt_deploy_data44.data": {
+      "original_sha256": "c61fe305cb04f62eda7c2bfb58c91b3ba10e68885767f2ceaab5ab6090ced572",
+      "patched_sha256": "cbcaec19fceb6af0a453c00878f8d896e8d3618d264a3e9c61230f75e6ef0466",
+      "original_size": 8395,
+      "patched_size": 8395,
+      "install": {
+        "file": "tnt_deploy_data44.data.install.bsdiff",
+        "sha256": "c27d8474d7c4653fd82b7b99894e9339e799a5df9ec0a8122b1acd400ccf31c3",
+        "size": 300
+      },
+      "restore": {
+        "file": "tnt_deploy_data44.data.restore.bsdiff",
+        "sha256": "03b19fa4f51b7b5bf333a48f18bd109f1fe96779f5ae10fa3ab31d66396797e0",
+        "size": 301
       }
     }
   }

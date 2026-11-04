@@ -162,6 +162,14 @@ def build_resources(data, originals=None, require_windows=True):
         raise PatchError('Не удалось подготовить подписи интерфейса: ' + str(exc)) from exc
     before[name] = source
     after[name] = output
+    from date_patch import NAME, patch_dates
+    source = originals[NAME] if originals and NAME in originals else read_asset(data, NAME)
+    try:
+        output, _ = patch_dates(source)
+    except ValueError as exc:
+        raise PatchError(str(exc)) from exc
+    before[NAME] = source
+    after[NAME] = output
     return before, after
 
 

@@ -1,7 +1,36 @@
 {
-  "revision": 5,
+  "revision": 6,
   "date": "2026-11-04",
-  "literary_review": {
+  "date_format": "DD.MM.YYYY",
+  "text_rows_updated": 257,
+  "titan_birth_records_checked": 38,
+  "date_tests_passed": 6,
+  "macOS_installer_tests_passed": 18,
+  "windows_format_installer_tests_passed": 5,
+  "total_tests_passed": 29,
+  "macOS_installed": true,
+  "installed_resources_and_original_backups_sha256_verified": true,
+  "source_keys_placeholders_tags_verified": 16426,
+  "clue_text_links_verified": 257,
+  "password_outputs_unchanged": true,
+  "assembly_bytes_identical_to_revision_5": true,
+  "configuration_change": "Only English birth-date field 8; all other configuration bytes unchanged",
+  "native_gameplay_check_revision_6": false,
+  "tested_on_real_windows": false,
+  "full_playthrough_tested": false,
+  "notes": [
+    "Full numeric dates in text and the Titan English date column localized. Existing Russian dates retained.",
+    "Drawn image text and internal timestamps were not changed.",
+    "Original Shirley record 3110016 differs by year between Chinese and English columns (1991 vs 1989); original EN calendar value retained, only order changed.",
+    "Initial Mac test run overlapped manifest generation and rejected the old manifest. All 18 Mac tests passed after generation completed; the five Windows-format and six date tests passed in the combined run."
+  ],
+  "installed_hashes": {
+    "sharedassets0.assets": "c8252140a4169770922858d48ab0ed637aa8e5ed465845853588a87d1331ef7c",
+    "resources.assets": "7a732b146cdc9cac95bea6cb241b5bb99c3ef3bd6dcdf608e0dfbbd9c5d35982",
+    "Managed/Assembly-CSharp.dll": "2173ecdab890155fd38874dd2b158db340143095ed72dbda17159e4b3f6ac2e5",
+    "StreamingAssets/DataConfig/tnt_deploy_data44.data": "cbcaec19fceb6af0a453c00878f8d896e8d3618d264a3e9c61230f75e6ef0466"
+  },
+  "literary_review_base_revision_5": {
     "revision": 5,
     "date": "2026-11-04",
     "scope": "Entire shipped EN text table: main story, tutorial, DLC, optional texts and UI",
@@ -46,45 +75,5 @@
     ],
     "translations_sha256": "579f0184e914fd1b99d481243a38f51b052ca09b5fb814971c2147f91e544f44",
     "literary_overrides_sha256": "a866ebcf4a846ddfc3b849694ee34a37b4aa98df296b4b68ccca700a34aa18a1"
-  },
-  "macOS": {
-    "game_build": "9369524",
-    "version": "1.3.93",
-    "tests_passed": 16,
-    "installed_on_local_game": true,
-    "installed_resources_and_original_backups_verified_sha256": true,
-    "native_visual_check_revision_5": false,
-    "prior_revision_3_visual_check": "Game launched and tutorial desktop/dossier inspected. Corrected name label and colon spacing confirmed. Password dialog visually checked in the running macOS game on 2026-11-04: ПАРОЛЬ heading, instruction line, all six labels and placeholders, explanation and Взломать button are readable without clipping or overlap. Titan input dialog and dossier action-button click states remain unverified.",
-    "ui_assets_and_assembly_identical_to_revisions_3_and_4": true
-  },
-  "Windows": {
-    "status": "experimental",
-    "tests_passed": 4,
-    "tested_on_real_windows": false,
-    "fixture": "Original macOS resources with serialized platform flag changed to StandaloneWindows64; not a Windows game release",
-    "runtime": "Bundled CPython 3.13.17 x64 and 16 Python packages"
-  },
-  "installer_tests": {
-    "total_passed": 20,
-    "log_sha256": "66e33245a59df5b6c96691db009d5f84439e22b17630736f272216a05a2ede03",
-    "coverage": [
-      "Install, repeat, restore, reinstall; exact original bytes",
-      "Mac upgrades from revisions 1–4; revision 4 with and without backup",
-      "Windows-format upgrades from revisions 2–4, repeat, restore, reinstall",
-      "Unknown files and damaged patches rejected before writes",
-      "Interrupted write and metadata failure rollback",
-      "Paths with spaces and Cyrillic; read-only compatibility check",
-      "Foreign backups and modified game files rejected",
-      "Exact agreement of every localized row across both platforms; all other language columns untouched"
-    ]
-  },
-  "ui_objects_edited": 136,
-  "assembly_display_edits": 4,
-  "full_game_playthrough_tested": false,
-  "no_save_files_modified": true,
-  "installed_hashes": {
-    "sharedassets0.assets": "4c6241794111ecae169299952479561b73ef7318413be299f5ec690967fd80d3",
-    "resources.assets": "7a732b146cdc9cac95bea6cb241b5bb99c3ef3bd6dcdf608e0dfbbd9c5d35982",
-    "Managed/Assembly-CSharp.dll": "2173ecdab890155fd38874dd2b158db340143095ed72dbda17159e4b3f6ac2e5"
   }
 }

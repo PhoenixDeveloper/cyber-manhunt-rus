@@ -26,7 +26,7 @@ def digest(data):
 
 
 def valid_name(name):
-    return name == 'Managed/Assembly-CSharp.dll' or bool(re.fullmatch(r'(?:sharedassets\d+|resources)\.assets', name))
+    return name in ('Managed/Assembly-CSharp.dll', 'StreamingAssets/DataConfig/tnt_deploy_data44.data') or bool(re.fullmatch(r'(?:sharedassets\d+|resources)\.assets', name))
 
 
 def read_asset(folder, name):
