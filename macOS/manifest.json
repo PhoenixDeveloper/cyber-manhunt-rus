@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "revision": 7,
+  "revision": 8,
   "game": "Cyber Manhunt",
   "platform": "macOS",
   "steam_app_id": "1216710",
@@ -12,18 +12,18 @@
   "files": {
     "sharedassets0.assets": {
       "original_sha256": "7320c01eb64b7c82719455d931bf06c6b7eda7d8c5aca767d9bccc5fc6ee18dc",
-      "patched_sha256": "6223f084303f5135e4f9c472953d1da983398fba4584302213c7ca1ba27f2431",
+      "patched_sha256": "7d760ab970cda92fd83c110eace8718063bbf0fc2ef9034f7a44156d0a124c26",
       "original_size": 7127556,
-      "patched_size": 8724064,
+      "patched_size": 8723752,
       "install": {
         "file": "sharedassets0.assets.install.bsdiff",
-        "sha256": "2f2f8a9a93b4a60869efeb627f2fb3b5a422541a099c3fa8c3a2294c7770f750",
-        "size": 314386
+        "sha256": "dcc70cd0f9f59bdfafef0c07a7dfc1aed16cf1ecfe83094f21f7482f86f14d13",
+        "size": 314152
       },
       "restore": {
         "file": "sharedassets0.assets.restore.bsdiff",
-        "sha256": "f927adef271303d7f0f319de795e5b1cfa4bb466b5d2acaee19f89eed563ef99",
-        "size": 750326
+        "sha256": "6deedd2c5131d22b0fdcba4a4489edf2684bde4f792ec0994ba99a7e344051ee",
+        "size": 750390
       },
       "previous": [
         {
@@ -78,6 +78,15 @@
             "file": "sharedassets0.assets.restore-v6.bsdiff",
             "sha256": "19cbd119bd3e1c4b3c69649a3070fe939f394ee4d70fb827920a3b34531f5628",
             "size": 750368
+          }
+        },
+        {
+          "sha256": "6223f084303f5135e4f9c472953d1da983398fba4584302213c7ca1ba27f2431",
+          "size": 8724064,
+          "restore": {
+            "file": "sharedassets0.assets.restore-v7.bsdiff",
+            "sha256": "f927adef271303d7f0f319de795e5b1cfa4bb466b5d2acaee19f89eed563ef99",
+            "size": 750326
           }
         }
       ]
