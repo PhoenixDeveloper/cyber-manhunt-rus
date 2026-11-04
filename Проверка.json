@@ -1,136 +1,90 @@
 {
+  "revision": 5,
   "date": "2026-11-04",
+  "literary_review": {
+    "revision": 5,
+    "date": "2026-11-04",
+    "scope": "Entire shipped EN text table: main story, tutorial, DLC, optional texts and UI",
+    "source_rows": 16426,
+    "unique_prose_records_read": 13183,
+    "prose_keys_read": 13929,
+    "technical_and_identity_audit": {
+      "total_keys": 2497,
+      "unique_values": 1687,
+      "manually_inspected_unique_candidates": 617,
+      "classified_preserved_values": 1070,
+      "translated_keys": 51,
+      "preserved": "Search identities, handles, passwords, addresses, file paths, URLs, IDs, credits, code and numeric/punctuation-only values retained."
+    },
+    "changed_keys_from_revision_4": 5973,
+    "translated_rows": 14043,
+    "prior_manual_source_rows": 674,
+    "prior_manual_source_sha256": "12c711ced6096f9e076c1a4ed846df5ebf80c0b6f3948b222c93250387ffb6e4",
+    "prior_manual_rows_unchanged": 664,
+    "prior_manual_rows_editorially_refined": 10,
+    "checks": {
+      "all_keys_tokens_tags_and_line_breaks": true,
+      "all_source_urls_unchanged": true,
+      "mixed_script_words": 0,
+      "identity_password_values_unchanged": 220,
+      "exact_clue_text_links_passed": 257,
+      "unresolved_link_regressions": 0,
+      "other_configured_links_classified": {
+        "Search-query label versus result snippet; absent as a substring in the original too.": 23,
+        "No localized body text configured.": 2,
+        "The whole displayed text is itself the clue; exact same localization key.": 66,
+        "DLC conclusion versus evidence title list; separately displayed entries, not substrings.": 62
+      }
+    },
+    "limited_adaptations": "Four sexualized advertisements involving minors were rendered non-graphically; trafficking/abuse plot and necessary clues retained.",
+    "full_game_playthrough_tested": false,
+    "images_and_audio_translated": false,
+    "known_source_details": [
+      "Protected Macheal Holdom identity retains original game spelling; prose uses source Michael Holdom.",
+      "Original unused/alternate DLC scene dates and ages are retained where source variants conflict.",
+      "Original markup tokens, including irregular source markup, are preserved."
+    ],
+    "translations_sha256": "579f0184e914fd1b99d481243a38f51b052ca09b5fb814971c2147f91e544f44",
+    "literary_overrides_sha256": "a866ebcf4a846ddfc3b849694ee34a37b4aa98df296b4b68ccca700a34aa18a1"
+  },
   "macOS": {
     "game_build": "9369524",
     "version": "1.3.93",
-    "tests_passed": 14,
-    "checks": [
-      "exact install/restore bytes",
-      "repeated install and restore",
-      "reinstall after restore",
-      "unknown resources rejected before writes",
-      "corrupted patch rejected before writes",
-      "mixed resources restored",
-      "write failure rollback",
-      "paths with spaces and Cyrillic",
-      "read-only compatibility check",
-      "foreign backup rejected",
-      "upgrade from revision 1 with and without portable backup",
-      "original backups retained after upgrade",
-      "metadata commit failure rolls back upgraded resources",
-      "upgrade from revision 2 and two-file backup to revision 3 and three-file backup",
-      "unknown assembly rejected before asset writes",
-      "serialized UI type trees round-trip without changes before editing",
-      "disassembled IL differs only in two title uses and three dossier separators",
-      "upgrade from revision 3 with original backup and exact restore",
-      "upgrade from revision 3 without backup and exact restore",
-      "revision 4 installed resources and original backups verified by SHA-256"
-    ],
-    "game_launch_menu_subtitles_checked": true,
-    "revision_2_installed_on_local_game": true,
-    "revision_2_visual_check": "Main menu and loaded tutorial desktop inspected. The reported photograph/tutorial-caption scene was not replayed.",
-    "revision_3_installed_on_local_game": true,
-    "revision_3_visual_check": "Game launched and tutorial desktop/dossier inspected. Corrected name label and colon spacing confirmed. Password dialog visually checked in the running macOS game on 2026-11-04: ПАРОЛЬ heading, instruction line, all six labels and placeholders, explanation and Взломать button are readable without clipping or overlap. Titan input dialog and dossier action-button click states remain unverified.",
-    "label_fit_check": {
-      "font": "Arial.ttf",
-      "labels_checked": 11,
-      "all_fit_within_configured_font_range": true,
-      "native_game_rendering_verified": false
-    },
-    "revision_3_launch_checked": true,
-    "revision_3_password_dialog_visual_check": {
-      "date": "2026-11-04",
-      "display_resolution": "2560x1600",
-      "heading_translated": true,
-      "all_six_labels_and_placeholders_separated": true,
-      "instruction_and_explanation_readable": true,
-      "crack_button_label_not_clipped": true,
-      "gameplay_actions_performed": false
-    },
-    "revision_4_installed_on_local_game": true,
-    "revision_4_visual_check": "Not launched in revision 4. UI resources and display-only assembly bytes are identical to the previously checked revision 3; translation table is new."
+    "tests_passed": 16,
+    "installed_on_local_game": true,
+    "installed_resources_and_original_backups_verified_sha256": true,
+    "native_visual_check_revision_5": false,
+    "prior_revision_3_visual_check": "Game launched and tutorial desktop/dossier inspected. Corrected name label and colon spacing confirmed. Password dialog visually checked in the running macOS game on 2026-11-04: ПАРОЛЬ heading, instruction line, all six labels and placeholders, explanation and Взломать button are readable without clipping or overlap. Titan input dialog and dossier action-button click states remain unverified.",
+    "ui_assets_and_assembly_identical_to_revisions_3_and_4": true
   },
   "Windows": {
     "status": "experimental",
-    "tests_passed": 3,
-    "checks": [
-      "all source strings and keys validated",
-      "unknown and changed text rejected",
-      "serialized Windows platform retained",
-      "unmodified object payloads unchanged",
-      "install, repeat, restore and reinstall",
-      "updated resources protected from old restore",
-      "upgrade from revision 2 (two-file backup) and restore exact original bytes",
-      "UI prefab paths and text type-tree validation",
-      "DLL display-string patch without PE layout changes",
-      "upgrade from revision 3 three-file backup, repeat, restore and reinstall on Windows-format fixture"
-    ],
-    "fixture": "Original macOS resources with serialized platform flag changed to StandaloneWindows64; not a Windows game release",
+    "tests_passed": 4,
     "tested_on_real_windows": false,
-    "runtime": "Bundled CPython 3.13.17 x64 and 16 Python packages",
-    "system_dependency": "Microsoft Visual C++ Redistributable x64 (msvcp140.dll) may need installing"
+    "fixture": "Original macOS resources with serialized platform flag changed to StandaloneWindows64; not a Windows game release",
+    "runtime": "Bundled CPython 3.13.17 x64 and 16 Python packages"
   },
-  "revision": 4,
-  "manual_review": {
-    "total_rows": 674,
-    "changed_rows_in_revision_2": 472,
-    "all_16426_keys_placeholders_tags_and_other_language_columns_verified": true,
-    "sql_command_example_verified": true,
-    "full_game_proofread": false,
-    "changed_rows_in_revision_3": 17,
-    "preserved_revision_3_rows": 674,
-    "preserved_revision_3_sha256": "12c711ced6096f9e076c1a4ed846df5ebf80c0b6f3948b222c93250387ffb6e4",
-    "clue_corrections": 68,
-    "additional_source_specific_corrections": 21
+  "installer_tests": {
+    "total_passed": 20,
+    "log_sha256": "66e33245a59df5b6c96691db009d5f84439e22b17630736f272216a05a2ede03",
+    "coverage": [
+      "Install, repeat, restore, reinstall; exact original bytes",
+      "Mac upgrades from revisions 1–4; revision 4 with and without backup",
+      "Windows-format upgrades from revisions 2–4, repeat, restore, reinstall",
+      "Unknown files and damaged patches rejected before writes",
+      "Interrupted write and metadata failure rollback",
+      "Paths with spaces and Cyrillic; read-only compatibility check",
+      "Foreign backups and modified game files rejected",
+      "Exact agreement of every localized row across both platforms; all other language columns untouched"
+    ]
   },
   "ui_objects_edited": 136,
   "assembly_display_edits": 4,
-  "translation": {
-    "engine": "DeepL Translator Business (web file translation)",
-    "source_language": "en",
-    "target_language": "ru",
-    "glossary": "Cyber Manhunt EN-RU v2",
-    "glossary_entries": 254,
-    "original_glossary_entries_unchanged": 120,
-    "glossary_sha256": "96a13484baad2d23b10bdb2c5748690fbe46dc0ebe78e75590856ce9d242d099",
-    "unique_clue_units": 706,
-    "unique_main_units": 12280,
-    "retry_units": 317,
-    "accepted_units": 12986,
-    "format_errors_detected_and_resolved": 7,
-    "protected_values_unchanged": 644,
-    "fixed_clue_mentions_checked": 380,
-    "mixed_script_word_errors_remaining": 0,
-    "changed_urls_remaining": 0,
-    "native_glossary_name_audit_exception": "Cloud storage is correctly translated as облачное хранилище, not a character name.",
-    "integrity_tests_passed": 14,
-    "full_game_proofread": false,
-    "coverage": {
-      "rows": 16426,
-      "categories": {
-        "deepl_main": 12900,
-        "preserved_manual": 674,
-        "nonlinguistic_or_protected": 1186,
-        "protected_value": 644,
-        "clue_value": 1022
-      },
-      "manual_unchanged": 674,
-      "corrections": 21
-    },
-    "responses": {
-      "clues": {
-        "sha256": "c7ff577db0afee5d3c5abe7bd2a5185f43e8be1822abcea31406103fb8457c91",
-        "validated": 706
-      },
-      "main": {
-        "sha256": "1c5b3a5f04025b2d3850dfedb8b941e32624640a48cba58f43f176b420ef997c",
-        "validated": 12280
-      },
-      "retry": {
-        "sha256": "8cc4690b3648affcbbe0272958ad1304eb012cb0da92a6959c733fbf89b73056",
-        "validated": 317
-      }
-    },
-    "merged_translation_sha256": "8e4769653911eb8bbbd0977fbcb237eff68279cc3dd6bf3bdcacfaf036f8ae91"
+  "full_game_playthrough_tested": false,
+  "no_save_files_modified": true,
+  "installed_hashes": {
+    "sharedassets0.assets": "4c6241794111ecae169299952479561b73ef7318413be299f5ec690967fd80d3",
+    "resources.assets": "7a732b146cdc9cac95bea6cb241b5bb99c3ef3bd6dcdf608e0dfbbd9c5d35982",
+    "Managed/Assembly-CSharp.dll": "2173ecdab890155fd38874dd2b158db340143095ed72dbda17159e4b3f6ac2e5"
   }
 }

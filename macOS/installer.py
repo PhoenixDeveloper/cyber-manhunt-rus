@@ -34,7 +34,7 @@ def load_payload():
             if not re.fullmatch('[0-9a-f]{64}', previous['sha256']) or not 0 < previous['size'] < 300 * 1024 * 1024:
                 raise PatchError('Повреждён манифест предыдущего перевода.')
             info = previous['restore']
-            if not re.fullmatch(re.escape(Path(name).name) + r'\.restore-v[123]\.bsdiff', info['file']):
+            if not re.fullmatch(re.escape(Path(name).name) + r'\.restore-v[1234]\.bsdiff', info['file']):
                 raise PatchError('Некорректное имя патча предыдущего перевода.')
             content = (ROOT / 'payload' / info['file']).read_bytes()
             if len(content) != info['size'] or digest(content) != info['sha256']:
@@ -114,7 +114,7 @@ def main():
     args = parser.parse_args()
     if sys.platform != 'darwin':
         raise PatchError('Этот установщик предназначен для macOS. Для Windows используйте соседнюю папку Windows.')
-    print('Cyber Manhunt 1.3.93 — русский машинный перевод (macOS)')
+    print('Cyber Manhunt 1.3.93 — русская локализация (macOS)')
     process(args.mode, select_game(args.game, 'macOS'))
 
 
