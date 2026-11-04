@@ -1,41 +1,35 @@
 {
-  "revision": 14,
+  "revision": 15,
   "date": "2026-11-05",
-  "changed_keys": {
-    "^invade_search0431": "Элис: Сегодня в восемь вечера, паб Black Lion. Наше обычное место!",
-    "^invade_search0433": "Элис: Вчера выписали. Подумаешь, лёгкая травма! Немного выпить можно… За эти дни в больнице чуть со скуки не умерла. Сегодня оторвёмся!",
-    "^invade_search0435": "Элис: Ты не поверишь, но я пригласила Кристу!",
-    "^invade_search0437": "Элис: Э-э… Скажем так, после свадьбы её очень хорошо кормят. Увидишь — удивишься!",
-    "^invade_search0439": "Элис: Кстати, я потеряла номер телефона Арделлы, попроси её тоже прийти — мы уже давно не собирались вчетвером.",
-    "^invade_search0419": "Сабина: Знаю я твой вкус! В прошлом месяце ты подарила Дине на день рождения шляпу такого странного цвета!",
-    "^invade_search0424": "Barbie Saya: Хорошо! Во сколько сегодня прилетаешь в Gauti?",
-    "^invade_search0425": "Ванда: В 15:00. Но только я: Грейс ещё вчера вернулась в страну — у неё дела в Demanra.",
-    "^invade_search0434": "Barbie Saya: Ну ты и любительница выпить! Ладно, отметим твою выписку. Кто ещё будет?"
-  },
-  "changed_rows": 9,
-  "related_phone_text_rows_reviewed": 46,
-  "original_english_speaker_bug_corrected_from_chinese": true,
-  "all_three_quiz_answer_indices_verified_unchanged": true,
-  "all_nine_quiz_options_unchanged": true,
-  "quiz_photographs_unchanged": true,
-  "all_16426_rows_and_other_language_columns_verified": true,
-  "configured_clue_bindings_verified": 257,
-  "runtime_clue_bindings_verified": 2,
-  "all_previous_edits_preserved": true,
-  "MagicQ_revision12_fixes_preserved": true,
-  "Barbie_debut_date_revision13_preserved": true,
-  "mac_and_windows_translation_rows_identical": true,
-  "other_three_game_files_unchanged_from_revision13": true,
+  "fix": "Phone numeric lock hint clipping",
+  "layout_path": "phonenumDialog/bk/content/tiptxt",
+  "changed_layout_objects": 3,
+  "hint_size_ui_units": [
+    400,
+    72
+  ],
+  "hint_font_min_max": [
+    18,
+    22
+  ],
+  "hint_alignment": "upper center",
+  "hint_wrap_model": "Roboto font from game resources, 22 px; widths 360, 380 and 400; two lines fit in 72 UI units; original 30-unit height insufficient",
+  "hint_and_error_do_not_overlap_input_or_OK": true,
+  "all_translation_rows_unchanged_from_revision14": true,
+  "quiz_and_password_logic_unchanged": true,
+  "other_three_resource_files_unchanged_from_revision14": true,
+  "private_and_Windows_layout_implementation_identical": true,
+  "all_Windows_serialized_object_payloads_match_corrected_mac_resources": true,
   "installer_checks": [
-    "Mac v13 without backup upgrade, repeat, exact restore",
-    "Windows-format v13 upgrade, all localization columns, exact restore",
-    "Actual Mac v13 upgrade with original backup, installed hashes verified"
+    "Mac v14 without backup upgrade, repeat, exact restore",
+    "Windows-format v14 upgrade, every object verified, exact restore",
+    "Actual Mac v14 upgrade with original backup, installed hashes verified"
   ],
   "installed_on_user_mac": true,
-  "installed_upgrade_from_revision": 13,
+  "installed_upgrade_from_revision": 14,
   "installed_files_sha256_verified": 4,
   "original_backup_files_sha256_verified": 4,
-  "native_phone_quiz_replay_checked": false,
+  "native_Unity_layout_checked_after_fix": false,
   "tested_on_real_windows": false,
-  "validation_status": "all checks passed; installed on user Mac"
+  "validation_status": "all resource and layout model checks passed; installed on user Mac"
 }

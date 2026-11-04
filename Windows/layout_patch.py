@@ -51,7 +51,8 @@ def patch_layout(env):
         font.update(m_BestFit=1, m_MinSize=minimum, m_MaxSize=maximum,
                     m_HorizontalOverflow=0, m_VerticalOverflow=0)
     keys = (b'^psw_', b'^sql01', b'^sql02', b'^copy', b'^open', b'^paste', b'^password', b'^txt_pwtitle',
-            b'^tuili4007', b'^tuili0458', b'^tuili0459', b'^tuili0460', b'^tuili0461')
+            b'^tuili4007', b'^tuili0458', b'^tuili0459', b'^tuili0460', b'^tuili0461',
+            b'^invade_phone0403', b'^twodrive_label06')
     for i, obj in objects.items():
         if obj.type.name != 'MonoBehaviour' or not any(k in obj.get_raw_data() for k in keys):
             continue
@@ -68,12 +69,23 @@ def patch_layout(env):
         database = root in ('sqlDialog', 'sqlDialog_dlc')
         note = root in ('noteitem', 'noteitem_dlc', 'noteitem_dlc7', 'noteitem1', 'noteitem3')
         coral = root == 'ReasoningPanel4007'
-        if not (password or database or note or coral):
+        phone_number = root == 'phonenumDialog'
+        if not (password or database or note or coral or phone_number):
             continue
         value = copy.deepcopy(old)
         font = value['m_FontData']; key = value['m_Text']
         rect_id = go2tr[go]; rect = copy.deepcopy(trs[rect_id])
-        if coral and '/step00/img_answer' in p and p.endswith('/Text') and key in {
+        if phone_number and p == 'phonenumDialog/bk/content/tiptxt' and key == '^invade_phone0403':
+            # Keep the full hint below the four input boxes. Two lines need
+            # more than the original 30 units; the panel is 464 units wide.
+            fit(font, 18, 22)
+            font['m_Alignment'] = 1  # upper center
+            rect['m_SizeDelta'].update(x=400.0, y=72.0)
+            rect['m_AnchoredPosition'].update(x=0.0, y=-76.0)
+        elif phone_number and p == 'phonenumDialog/bk/content/txt_tip' and key == '^twodrive_label06':
+            # Leave a separate row for the error above the OK button.
+            rect['m_AnchoredPosition']['y'] = -132.0
+        elif coral and '/step00/img_answer' in p and p.endswith('/Text') and key in {
                 '^tuili4007' + str(n) for n in range(16, 26)}:
             # The 152x46 cards leave a 142x36 text area. Allow two complete
             # Russian lines instead of silently clipping the second line.
