@@ -11,7 +11,7 @@ on:
       tag:
         description: Existing revision tag to validate
         required: true
-        default: v11
+        default: v12
       publish:
         description: Publish after validation (off means validation only)
         type: boolean

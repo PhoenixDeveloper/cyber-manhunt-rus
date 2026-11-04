@@ -1,226 +1,39 @@
 {
-  "revision": 11,
+  "revision": 12,
   "date": "2026-11-04",
   "changed_keys": {
-    "^tuili400716": "Пластика лица",
-    "^tuili400724": "Дурная репутация",
-    "^tuili0458": "Хвасталась компроматом на Barbie Saya.",
-    "^tuili0459": "Хвасталась работой в Titan.",
-    "^tuili0461": "Слала Barbie Saya угрозы и кукол без голов."
+    "^phone_reply0420": "Господин Ito, я не дура. Для начала покажите, что настроены серьёзно.",
+    "^phone_reply0424": "Barbie Saya — псевдоним. Я видела её карту соцстрахования. Настоящее имя — Barbara Miller. Обычное деревенское имя. Не подалась бы в артистки — до сих пор доила бы коров на ферме!",
+    "^phone_reply0427": "Конечно, я даже сфотографировала её, и фотография окажется в вашем почтовом ящике, как только поступят деньги!",
+    "^phone_reply042701": "сфотографировала",
+    "^phone_reply0429": "Э-э, подождите, я ещё не закончила!"
   },
-  "ui_components_changed": 14,
-  "only_targeted_text_fonts_changed": true,
-  "layout_fit_model": [
-    {
-      "key": "^tuili400724",
-      "object": 190042,
-      "path": "ReasoningPanel4007/middlePanel/allcontent/step00/img_answer09/Text",
-      "width": 142,
-      "height": 36,
-      "size_model": 16,
-      "lines": [
-        "Дурная репутация"
-      ],
-      "line_height": 19,
-      "text": "Дурная репутация"
-    },
-    {
-      "key": "^tuili0460",
-      "object": 211616,
-      "path": "ReasoningPanel4007/middlePanel/allcontent/step01/dialog03/txt_content",
-      "width": 210.6,
-      "height": 69.66,
-      "size_model": 20,
-      "lines": [
-        "Оскорбляла Barbie",
-        "Saya в интернете."
-      ],
-      "line_height": 24,
-      "text": "Оскорбляла Barbie Saya в интернете."
-    },
-    {
-      "key": "^tuili0459",
-      "object": 211649,
-      "path": "ReasoningPanel4007/middlePanel/allcontent/step01/dialog02/txt_content",
-      "width": 210.6,
-      "height": 69.66,
-      "size_model": 20,
-      "lines": [
-        "Хвасталась работой в",
-        "Titan."
-      ],
-      "line_height": 24,
-      "text": "Хвасталась работой в Titan."
-    },
-    {
-      "key": "^tuili0461",
-      "object": 211651,
-      "path": "ReasoningPanel4007/middlePanel/allcontent/step01/dialog04/txt_content",
-      "width": 210.6,
-      "height": 69.66,
-      "size_model": 19,
-      "lines": [
-        "Слала Barbie Saya",
-        "угрозы и кукол без",
-        "голов."
-      ],
-      "line_height": 23,
-      "text": "Слала Barbie Saya угрозы и кукол без голов."
-    },
-    {
-      "key": "^tuili0458",
-      "object": 211653,
-      "path": "ReasoningPanel4007/middlePanel/allcontent/step01/dialog01/txt_content",
-      "width": 210.6,
-      "height": 69.66,
-      "size_model": 19,
-      "lines": [
-        "Хвасталась",
-        "компроматом на Barbie",
-        "Saya."
-      ],
-      "line_height": 23,
-      "text": "Хвасталась компроматом на Barbie Saya."
-    },
-    {
-      "key": "^tuili400718",
-      "object": 222418,
-      "path": "ReasoningPanel4007/middlePanel/allcontent/step00/img_answer03/Text",
-      "width": 142,
-      "height": 36,
-      "size_model": 17,
-      "lines": [
-        "Сострадательная"
-      ],
-      "line_height": 21,
-      "text": "Сострадательная"
-    },
-    {
-      "key": "^tuili400719",
-      "object": 222419,
-      "path": "ReasoningPanel4007/middlePanel/allcontent/step00/img_answer04/Text",
-      "width": 142,
-      "height": 36,
-      "size_model": 18,
-      "lines": [
-        "Красивая"
-      ],
-      "line_height": 22,
-      "text": "Красивая"
-    },
-    {
-      "key": "^tuili400717",
-      "object": 222424,
-      "path": "ReasoningPanel4007/middlePanel/allcontent/step00/img_answer02/Text",
-      "width": 142,
-      "height": 36,
-      "size_model": 15,
-      "lines": [
-        "Беспорядочные",
-        "связи"
-      ],
-      "line_height": 18,
-      "text": "Беспорядочные связи"
-    },
-    {
-      "key": "^tuili400722",
-      "object": 222427,
-      "path": "ReasoningPanel4007/middlePanel/allcontent/step00/img_answer07/Text",
-      "width": 142,
-      "height": 36,
-      "size_model": 18,
-      "lines": [
-        "Добрая"
-      ],
-      "line_height": 22,
-      "text": "Добрая"
-    },
-    {
-      "key": "^tuili400721",
-      "object": 222431,
-      "path": "ReasoningPanel4007/middlePanel/allcontent/step00/img_answer06/Text",
-      "width": 142,
-      "height": 36,
-      "size_model": 18,
-      "lines": [
-        "Жестокая"
-      ],
-      "line_height": 22,
-      "text": "Жестокая"
-    },
-    {
-      "key": "^tuili400720",
-      "object": 222434,
-      "path": "ReasoningPanel4007/middlePanel/allcontent/step00/img_answer05/Text",
-      "width": 142,
-      "height": 36,
-      "size_model": 18,
-      "lines": [
-        "Вспыльчивая"
-      ],
-      "line_height": 22,
-      "text": "Вспыльчивая"
-    },
-    {
-      "key": "^tuili400723",
-      "object": 222436,
-      "path": "ReasoningPanel4007/middlePanel/allcontent/step00/img_answer08/Text",
-      "width": 142,
-      "height": 36,
-      "size_model": 18,
-      "lines": [
-        "Решительная"
-      ],
-      "line_height": 22,
-      "text": "Решительная"
-    },
-    {
-      "key": "^tuili400716",
-      "object": 222437,
-      "path": "ReasoningPanel4007/middlePanel/allcontent/step00/img_answer01/Text",
-      "width": 142,
-      "height": 36,
-      "size_model": 18,
-      "lines": [
-        "Пластика лица"
-      ],
-      "line_height": 22,
-      "text": "Пластика лица"
-    },
-    {
-      "key": "^tuili400725",
-      "object": 227056,
-      "path": "ReasoningPanel4007/middlePanel/allcontent/step00/img_answer10/Text",
-      "width": 142,
-      "height": 36,
-      "size_model": 18,
-      "lines": [
-        "Убийца"
-      ],
-      "line_height": 22,
-      "text": "Убийца"
-    }
+  "MagicQ_phone": "201-5564-868",
+  "reachable_conversation_nodes_checked": 44,
+  "player_replies_unchanged": true,
+  "all_previous_manual_edits_preserved": true,
+  "clue_id": "#10445",
+  "clue_bindings_verified": true,
+  "phone_fragment_model_cases_passed": 153,
+  "font_sizes": [
+    17,
+    18,
+    19
   ],
-  "previous_manual_fixes_and_clue_bindings_preserved": true,
-  "windows_rows_and_layout_code_match": true,
-  "intentional_fog_preserved": true,
-  "fog_code_evidence": "DragCloudItem.OnEndDrag fades children 1 and 2 to alpha 0 after a correct source drop",
-  "native_UI_verified": false,
+  "width_range": [
+    225,
+    275
+  ],
+  "mac_and_windows_translation_rows_identical": true,
+  "native_phone_hover_after_fix_checked": false,
   "tested_on_real_windows": false,
-  "installed_on_user_mac": true,
-  "validation_status": "all checks passed; revision 11 installed on user Mac",
+  "installed_on_user_mac": false,
+  "validation_status": "all checks passed; local installation pending",
+  "other_three_game_files_unchanged_from_revision11": true,
   "installer_checks_passed": 3,
   "installer_checks": [
-    "Mac v10 upgrade with original backup, repeat install and exact restore",
-    "Mac v10 upgrade without backup, repeat install and exact restore",
-    "Windows-format v10 upgrade, repeat install, restore, reinstall"
-  ],
-  "layout_model_visually_reviewed": true,
-  "installed_files_and_original_backups_verified_sha256": true,
-  "installed_hashes": {
-    "sharedassets0.assets": "63f756efed229cba728abfcc7ccba25d7e6f790840dac9dfa310e709e55daacb",
-    "resources.assets": "b83c910eca1fd391d8abbe728084757caa6135b95c6616fc6fdae963d3f15ec0",
-    "Managed/Assembly-CSharp.dll": "2173ecdab890155fd38874dd2b158db340143095ed72dbda17159e4b3f6ac2e5",
-    "StreamingAssets/DataConfig/tnt_deploy_data44.data": "cbcaec19fceb6af0a453c00878f8d896e8d3618d264a3e9c61230f75e6ef0466"
-  }
+    "Mac v11 upgrade with original backup, repeat, exact restore",
+    "Mac v11 upgrade without backup, repeat, exact restore",
+    "Windows-format v11 upgrade, repeat, restore, reinstall"
+  ]
 }
