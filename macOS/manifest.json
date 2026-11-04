@@ -1,0 +1,93 @@
+{
+  "format": 1,
+  "revision": 3,
+  "game": "Cyber Manhunt",
+  "platform": "macOS",
+  "steam_app_id": "1216710",
+  "steam_build": "9369524",
+  "game_version": "1.3.93",
+  "language_slot": "EN",
+  "translated_rows": 14079,
+  "reviewed_rows": 674,
+  "files": {
+    "sharedassets0.assets": {
+      "original_sha256": "7320c01eb64b7c82719455d931bf06c6b7eda7d8c5aca767d9bccc5fc6ee18dc",
+      "patched_sha256": "1a627c3d0b7cb2fe631302c06f5756712b3ef74c2e104ac5db74d606cac06679",
+      "original_size": 7127556,
+      "patched_size": 8893352,
+      "install": {
+        "file": "sharedassets0.assets.install.bsdiff",
+        "sha256": "1ce59213fca431679dfe3b24f7a6746d9f07f686679746996f1c8f7b435ca324",
+        "size": 323128
+      },
+      "restore": {
+        "file": "sharedassets0.assets.restore.bsdiff",
+        "sha256": "2833769e09d7a2bb6a6b9fbdfde9dc645c937f75ca38306e605def7ca66b7518",
+        "size": 753293
+      },
+      "previous": [
+        {
+          "sha256": "fd369ed6cc8c7653ec88dc566a61b5d4a5160401e9b1b057183a73be07e1460e",
+          "size": 8899568,
+          "restore": {
+            "file": "sharedassets0.assets.restore-v1.bsdiff",
+            "sha256": "c43a9319b959fa9eaaa4cc465163e9c2108cd24556197a4256b32bdacec7b475",
+            "size": 752884
+          }
+        },
+        {
+          "sha256": "359e9801aa6a970018deb02c709babff684ddad9698a337002ba8c2e385425d6",
+          "size": 8893464,
+          "restore": {
+            "file": "sharedassets0.assets.restore-v2.bsdiff",
+            "sha256": "b4b4afc73ec9e24795549fe3f81b1cb6aaf4d90358d3c1e1ed1bd6fbbb9d54be",
+            "size": 752944
+          }
+        }
+      ]
+    },
+    "resources.assets": {
+      "original_sha256": "8c00c55c1abce2d6787301d9b7fa0fda7d2b40a8ade38634605081120ccf429a",
+      "patched_sha256": "7a732b146cdc9cac95bea6cb241b5bb99c3ef3bd6dcdf608e0dfbbd9c5d35982",
+      "original_size": 60551716,
+      "patched_size": 61100320,
+      "install": {
+        "file": "resources.assets.install.bsdiff",
+        "sha256": "6549926346333c3713fedcaa53a61f8e23fa9a5883c94de6c8e85fcfed1c2dd3",
+        "size": 144849
+      },
+      "restore": {
+        "file": "resources.assets.restore.bsdiff",
+        "sha256": "10cc93246518cffa847ad99190a49c57ac087ace73d0cc2aeac2ea8427ec0c91",
+        "size": 195600
+      },
+      "previous": [
+        {
+          "sha256": "cade9cdbca5876f224b2e592672da6debd1fc2a28415fa5764fcb750ea7abb94",
+          "size": 61100320,
+          "restore": {
+            "file": "resources.assets.restore-v1.bsdiff",
+            "sha256": "f3f94d5a584c5aeddf3bb50b71616a4f2e8f9362181b0e29f0e3dcf746634001",
+            "size": 195142
+          }
+        }
+      ]
+    },
+    "Managed/Assembly-CSharp.dll": {
+      "original_sha256": "6445531515255ac05246e9ad412eab920e0b683fbdd28fa1b9e50c4526e81be2",
+      "patched_sha256": "2173ecdab890155fd38874dd2b158db340143095ed72dbda17159e4b3f6ac2e5",
+      "original_size": 2882560,
+      "patched_size": 2882560,
+      "install": {
+        "file": "Assembly-CSharp.dll.install.bsdiff",
+        "sha256": "64f32e462ddb4e1ec2cbcfd3930a32a9a14c36a255d2f629a6cd1cc716355669",
+        "size": 199
+      },
+      "restore": {
+        "file": "Assembly-CSharp.dll.restore.bsdiff",
+        "sha256": "1b95b31c428615cf89fedc167337c3950f0ca1af6184ae3e36df77b9da6aac35",
+        "size": 198
+      }
+    }
+  }
+}

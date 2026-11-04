@@ -1,0 +1,13 @@
+{
+  "format": 1,
+  "game": "Cyber Manhunt",
+  "platform": "Windows",
+  "experimental": true,
+  "translation_sha256": "fc2d64d5bb95fef7f9d661506d4f222342a14a835f110b0db8de1a794aa85771",
+  "source_game_version": "1.3.93",
+  "source_steam_build": "9369524",
+  "translated_rows": 14079,
+  "language_slot": "EN",
+  "revision": 3,
+  "reviewed_rows": 674
+}

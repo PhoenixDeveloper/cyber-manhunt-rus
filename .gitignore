@@ -1,0 +1,13 @@
+.DS_Store
+__MACOSX/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+dist/
+CyberManhunt-RU-backup/
+*.save
+Player.log
+Player-prev.log
+

@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-04",
+  "macOS": {
+    "game_build": "9369524",
+    "version": "1.3.93",
+    "tests_passed": 12,
+    "checks": [
+      "exact install/restore bytes",
+      "repeated install and restore",
+      "reinstall after restore",
+      "unknown resources rejected before writes",
+      "corrupted patch rejected before writes",
+      "mixed resources restored",
+      "write failure rollback",
+      "paths with spaces and Cyrillic",
+      "read-only compatibility check",
+      "foreign backup rejected",
+      "upgrade from revision 1 with and without portable backup",
+      "original backups retained after upgrade",
+      "metadata commit failure rolls back upgraded resources",
+      "upgrade from revision 2 and two-file backup to revision 3 and three-file backup",
+      "unknown assembly rejected before asset writes",
+      "serialized UI type trees round-trip without changes before editing",
+      "disassembled IL differs only in two title uses and three dossier separators"
+    ],
+    "game_launch_menu_subtitles_checked": true,
+    "revision_2_installed_on_local_game": true,
+    "revision_2_visual_check": "Main menu and loaded tutorial desktop inspected. The reported photograph/tutorial-caption scene was not replayed.",
+    "revision_3_installed_on_local_game": true,
+    "revision_3_visual_check": "Game launched and tutorial desktop/dossier inspected. Corrected name label and colon spacing confirmed. Password dialog visually checked in the running macOS game on 2026-11-04: ПАРОЛЬ heading, instruction line, all six labels and placeholders, explanation and Взломать button are readable without clipping or overlap. Titan input dialog and dossier action-button click states remain unverified.",
+    "label_fit_check": {
+      "font": "Arial.ttf",
+      "labels_checked": 11,
+      "all_fit_within_configured_font_range": true,
+      "native_game_rendering_verified": false
+    },
+    "revision_3_launch_checked": true,
+    "revision_3_password_dialog_visual_check": {
+      "date": "2026-11-04",
+      "display_resolution": "2560x1600",
+      "heading_translated": true,
+      "all_six_labels_and_placeholders_separated": true,
+      "instruction_and_explanation_readable": true,
+      "crack_button_label_not_clipped": true,
+      "gameplay_actions_performed": false
+    }
+  },
+  "Windows": {
+    "status": "experimental",
+    "tests_passed": 2,
+    "checks": [
+      "all source strings and keys validated",
+      "unknown and changed text rejected",
+      "serialized Windows platform retained",
+      "unmodified object payloads unchanged",
+      "install, repeat, restore and reinstall",
+      "updated resources protected from old restore",
+      "upgrade from revision 2 (two-file backup) and restore exact original bytes",
+      "UI prefab paths and text type-tree validation",
+      "DLL display-string patch without PE layout changes"
+    ],
+    "fixture": "Original macOS resources with serialized platform flag changed to StandaloneWindows64; not a Windows game release",
+    "tested_on_real_windows": false,
+    "runtime": "Bundled CPython 3.13.17 x64 and 16 Python packages",
+    "system_dependency": "Microsoft Visual C++ Redistributable x64 (msvcp140.dll) may need installing"
+  },
+  "revision": 3,
+  "manual_review": {
+    "total_rows": 674,
+    "changed_rows_in_revision_2": 472,
+    "all_16426_keys_placeholders_tags_and_other_language_columns_verified": true,
+    "sql_command_example_verified": true,
+    "full_game_proofread": false,
+    "changed_rows_in_revision_3": 17
+  },
+  "ui_objects_edited": 136,
+  "assembly_display_edits": 4
+}
