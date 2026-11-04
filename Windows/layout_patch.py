@@ -50,7 +50,8 @@ def patch_layout(env):
     def fit(font, minimum, maximum):
         font.update(m_BestFit=1, m_MinSize=minimum, m_MaxSize=maximum,
                     m_HorizontalOverflow=0, m_VerticalOverflow=0)
-    keys = (b'^psw_', b'^sql01', b'^sql02', b'^copy', b'^open', b'^paste', b'^password', b'^txt_pwtitle')
+    keys = (b'^psw_', b'^sql01', b'^sql02', b'^copy', b'^open', b'^paste', b'^password', b'^txt_pwtitle',
+            b'^tuili4007', b'^tuili0458', b'^tuili0459', b'^tuili0460', b'^tuili0461')
     for i, obj in objects.items():
         if obj.type.name != 'MonoBehaviour' or not any(k in obj.get_raw_data() for k in keys):
             continue
@@ -66,12 +67,23 @@ def patch_layout(env):
         password = root in ('passwordDialog', 'passwordDialog_dlc', 'passwordDialog_dlc7')
         database = root in ('sqlDialog', 'sqlDialog_dlc')
         note = root in ('noteitem', 'noteitem_dlc', 'noteitem_dlc7', 'noteitem1', 'noteitem3')
-        if not (password or database or note):
+        coral = root == 'ReasoningPanel4007'
+        if not (password or database or note or coral):
             continue
         value = copy.deepcopy(old)
         font = value['m_FontData']; key = value['m_Text']
         rect_id = go2tr[go]; rect = copy.deepcopy(trs[rect_id])
-        if password and key.startswith('^psw_') and p.endswith('/title'):
+        if coral and '/step00/img_answer' in p and p.endswith('/Text') and key in {
+                '^tuili4007' + str(n) for n in range(16, 26)}:
+            # The 152x46 cards leave a 142x36 text area. Allow two complete
+            # Russian lines instead of silently clipping the second line.
+            fit(font, 14, 18)
+        elif coral and '/step01/dialog' in p and p.endswith('/txt_content') and key in {
+                '^tuili0458', '^tuili0459', '^tuili0460', '^tuili0461'}:
+            # Fog images are intentional puzzle elements. Only fit the text
+            # underneath; DragCloudItem still reveals it after a correct drop.
+            fit(font, 14, 20)
+        elif password and key.startswith('^psw_') and p.endswith('/title'):
             fit(font, 18, min(22, font['m_FontSize']))
         elif database and key in ('^sql01', '^sql02'):
             fit(font, 20, 24)

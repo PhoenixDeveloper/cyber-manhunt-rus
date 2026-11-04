@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "revision": 10,
+  "revision": 11,
   "game": "Cyber Manhunt",
   "platform": "macOS",
   "steam_app_id": "1216710",
@@ -12,18 +12,18 @@
   "files": {
     "sharedassets0.assets": {
       "original_sha256": "7320c01eb64b7c82719455d931bf06c6b7eda7d8c5aca767d9bccc5fc6ee18dc",
-      "patched_sha256": "17598d0039ce01dce28716cdff454fc7283a372a73c07aa2ce883c4d81ded643",
+      "patched_sha256": "63f756efed229cba728abfcc7ccba25d7e6f790840dac9dfa310e709e55daacb",
       "original_size": 7127556,
-      "patched_size": 8723592,
+      "patched_size": 8723464,
       "install": {
         "file": "sharedassets0.assets.install.bsdiff",
-        "sha256": "e6a217f4496cbc7987aa3c8eaf38c7877f476711f5a9887cbad57156e7524cb0",
-        "size": 314391
+        "sha256": "19348ff7823d63cadc66b9fc7421560ca7bdf626f556e7cddb1850c703328405",
+        "size": 313989
       },
       "restore": {
         "file": "sharedassets0.assets.restore.bsdiff",
-        "sha256": "f1088089dbb4a35f7c488c929a21474bf426e6c8cd93fcb628cb58d4f8d4edd5",
-        "size": 750554
+        "sha256": "593030a23cb6a7f783c4c633be22598b30b0174038959fb2747d86e1da0aacd4",
+        "size": 750134
       },
       "previous": [
         {
@@ -106,23 +106,32 @@
             "sha256": "acff39f741ff5eedf4900583f868d3698e1ce74ba1795d5bacc0aeb7004fbdd2",
             "size": 750424
           }
+        },
+        {
+          "sha256": "17598d0039ce01dce28716cdff454fc7283a372a73c07aa2ce883c4d81ded643",
+          "size": 8723592,
+          "restore": {
+            "file": "sharedassets0.assets.restore-v10.bsdiff",
+            "sha256": "f1088089dbb4a35f7c488c929a21474bf426e6c8cd93fcb628cb58d4f8d4edd5",
+            "size": 750554
+          }
         }
       ]
     },
     "resources.assets": {
       "original_sha256": "8c00c55c1abce2d6787301d9b7fa0fda7d2b40a8ade38634605081120ccf429a",
-      "patched_sha256": "7a732b146cdc9cac95bea6cb241b5bb99c3ef3bd6dcdf608e0dfbbd9c5d35982",
+      "patched_sha256": "b83c910eca1fd391d8abbe728084757caa6135b95c6616fc6fdae963d3f15ec0",
       "original_size": 60551716,
       "patched_size": 61100320,
       "install": {
         "file": "resources.assets.install.bsdiff",
-        "sha256": "6549926346333c3713fedcaa53a61f8e23fa9a5883c94de6c8e85fcfed1c2dd3",
-        "size": 144849
+        "sha256": "07d479d4fe000bf45e64ba6c473c806d88b1ebc26fd79809d99e58e5a8790f5f",
+        "size": 144906
       },
       "restore": {
         "file": "resources.assets.restore.bsdiff",
-        "sha256": "10cc93246518cffa847ad99190a49c57ac087ace73d0cc2aeac2ea8427ec0c91",
-        "size": 195600
+        "sha256": "5b5dc3e48f0afee9d9bc0e8d7c548a58fbbd80451faa47918b9ebf2c10abcd64",
+        "size": 195665
       },
       "previous": [
         {
@@ -132,6 +141,15 @@
             "file": "resources.assets.restore-v1.bsdiff",
             "sha256": "f3f94d5a584c5aeddf3bb50b71616a4f2e8f9362181b0e29f0e3dcf746634001",
             "size": 195142
+          }
+        },
+        {
+          "sha256": "7a732b146cdc9cac95bea6cb241b5bb99c3ef3bd6dcdf608e0dfbbd9c5d35982",
+          "size": 61100320,
+          "restore": {
+            "file": "resources.assets.restore-v3.bsdiff",
+            "sha256": "10cc93246518cffa847ad99190a49c57ac087ace73d0cc2aeac2ea8427ec0c91",
+            "size": 195600
           }
         }
       ]
