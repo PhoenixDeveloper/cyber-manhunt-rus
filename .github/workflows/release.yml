@@ -2,6 +2,8 @@ name: Publish localization revision
 
 on:
   push:
+    branches:
+      - main
     tags:
       - 'v[0-9]*'
   workflow_dispatch:
@@ -34,10 +36,10 @@ jobs:
           persist-credentials: false
       - name: Validate and package both platforms
         env:
-          RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
+          RELEASE_TAG: ${{ inputs.tag || (startsWith(github.ref, 'refs/tags/') && github.ref_name) || '' }}
         run: python3 tools/package_release.py --tag "$RELEASE_TAG" --output dist
       - name: Publish archives and checksums
-        if: github.event_name == 'push' || inputs.publish
+        if: startsWith(github.ref, 'refs/tags/v') || (github.event_name == 'workflow_dispatch' && inputs.publish)
         env:
           GH_TOKEN: ${{ github.token }}
           RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
