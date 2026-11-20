@@ -77,6 +77,20 @@ def revision(root):
     return numbers[0]
 
 
+def check_prefab_bindings(root):
+    """DLC clues also use literal fragment/body pairs serialized in prefabs."""
+    contracts = json.loads((root / 'Проверка подсветки/Привязки сцен.json').read_text())
+    rows = json.loads(gzip.decompress((root / 'Windows/translations.json.gz').read_bytes()))['rows']
+    if len(contracts) != 95:
+        raise ValueError('Incomplete prefab highlight contracts')
+    for contract in contracts:
+        fragment = rows[contract['fragment']]['ru']
+        text = rows[contract['text']]['ru']
+        if not fragment or fragment not in text:
+            raise ValueError('Broken prefab highlight: ' + contract['path'])
+    return len(contracts)
+
+
 def write_zip(path, root, files):
     sums = ''.join(sha(p.read_bytes()) + '  ' + p.relative_to(root).as_posix() + '\n' for p in files)
     expected = {}
@@ -112,6 +126,7 @@ def build(root, output, expected_tag=None, seen=None):
     if output == root or root in output.parents and output.relative_to(root).parts[0] != 'dist':
         raise ValueError('Use dist/ or an output directory outside the repository')
     n = revision(root)
+    prefab_contracts = check_prefab_bindings(root)
     if expected_tag and expected_tag != f'v{n}':
         raise ValueError(f'Tag {expected_tag} does not match revision {n}')
     all_files = list(source_files(root))
@@ -134,7 +149,8 @@ def build(root, output, expected_tag=None, seen=None):
         artifacts.append(write_zip(target, root, selected))
     sums = output / 'SHA256SUMS.txt'
     sums.write_text(''.join(a['sha256'] + '  ' + a['name'] + '\n' for a in artifacts))
-    report = {'revision': n, 'artifacts': artifacts, 'scanned_unique_units': len(cache)}
+    report = {'revision': n, 'artifacts': artifacts, 'scanned_unique_units': len(cache),
+              'prefab_highlight_contracts_verified': prefab_contracts}
     (output / 'publication.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
     return report
 
